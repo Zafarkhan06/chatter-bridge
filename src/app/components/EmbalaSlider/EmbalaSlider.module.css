@@ -1,0 +1,128 @@
+/* .embla {
+    max-width: 48rem;
+    margin: auto;
+    --slide-height: 19rem;
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+  }
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  .embla__slide {
+    position: relative; 
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+  }
+
+  .embla__slide__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+
+  .embla__slide__number {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    border-radius: 1.8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--slide-height);
+    user-select: none;
+  }
+  
+  .embla__slide__content {
+    position: relative; 
+    z-index: 0;
+  }
+  .embla__slide__imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */
+
+
+.embla {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    --slide-height: 100%;
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+  }
+  
+  .embla__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .embla__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .embla__slide {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .embla__slide__imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .embla__slide__textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 60%;
+    transform: translate(-50%, -50%);
+    //background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    max-width: 100%; /* Ensure the text doesn't overflow the container */
+    z-index: 2; /* Make sure the overlay is above the slide content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    .embla__slide__textOverlay {
+      min-width: 85%;
+    }
+  }
+  
+  
+  /* .embla__slide__textOverlay h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .embla__slide__textOverlay p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+   */
