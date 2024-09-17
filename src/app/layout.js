@@ -5,6 +5,7 @@ import './globals.css';
 import theme from './theme.js';
 import { Container } from '@mui/material';
 import Navbar from "@/app/components/Header/Navbar";
+import Footer from './components/Footer/Footer';
 
 const montserrat = localFont({
   src: './fonts/Montserrat-VariableFont_wght.ttf',
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
             <Navbar />
           {/* <Container maxWidth="lg" disableGutters> */}
             {children}
+            <Footer />
             {/* </Container> */}
             </ThemeProvider>
         </AppRouterCacheProvider>

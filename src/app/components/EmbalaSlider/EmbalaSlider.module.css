@@ -93,6 +93,30 @@
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+  
+  .embla__slide__imageWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 26, 12, 0.7); /* Stronger overlay with your color */
+    z-index: 1; /* Make sure this layer is above the image */
+  }
+  
+  .embla__slide__imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 4s ease-in-out; /* Smooth zoom transition */
+    z-index: 0; /* Keep the image under the overlay */
+  }
+  
+  .embla__slide__imageWrapper:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
   }
   
   .embla__slide__textOverlay {
@@ -101,14 +125,13 @@
     left: 50%;
     min-width: 60%;
     transform: translate(-50%, -50%);
-    //background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    max-width: 100%; /* Ensure the text doesn't overflow the container */
-    z-index: 2; /* Make sure the overlay is above the slide content */
+    z-index: 2; /* Ensure the text is above the overlay */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff; /* Set the color of the text */
   }
-
+  
   @media screen and (max-width: 992px) {
     .embla__slide__textOverlay {
       min-width: 85%;

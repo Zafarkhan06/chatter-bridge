@@ -74,7 +74,7 @@ export default function Navbar() {
 
   return (
 
-    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#0F0F0F', color: '#bada55', height: '80px' }}>
+    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#161a0c', color: '#bada55', height: '80px' }}>
       <Container maxWidth="xl" disableGutters>
         <Toolbar sx={{ justifyContent: 'space-between' ,alignContent: 'center', alignItems: 'center' , mt:1}}>
           {/* Logo on the left */}

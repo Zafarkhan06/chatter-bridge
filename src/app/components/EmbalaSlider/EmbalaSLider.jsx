@@ -58,15 +58,20 @@ const EmblaCarousel = (props) => {
                                 />
                                 <Container maxWidth="xl" disableGutters>
                                     <div className={styles.embla__slide__textOverlay}>
-                                        <h4 className='font-bold leading-none text-[#bada55]'>{slide.subtitle}</h4>
-                                        <h1 className='font-black text-[#fdfefb] text-start leading-none mt-2'>{slide.title}</h1>
-                                        <div className='w-fit mt-10'>
+                                        <h4 className="font-bold leading-none text-[#bada55]">
+                                            {slide.subtitle}
+                                        </h4>
+                                        <h1 className="font-black text-[#fdfefb] text-start leading-none mt-2">
+                                            {slide.title}
+                                        </h1>
+                                        <div className="w-fit mt-10">
                                             <MyCustomButton text="Get Started" href="/contact" />
                                         </div>
-                                        <p className='font-medium mt-16' dangerouslySetInnerHTML={{ __html: slide.description }} />
+                                        <p className="font-medium mt-16" dangerouslySetInnerHTML={{ __html: slide.description }} />
                                     </div>
                                 </Container>
                             </div>
+
                         </div>
                     ))}
                 </div>
