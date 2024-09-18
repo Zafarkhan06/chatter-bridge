@@ -18,7 +18,7 @@ const InfoSection = ({
 }) => {
     return (
         <Container maxWidth="xl">
-            <div className="my-16 py-32 rounded-xl  grid grid-cols-1 items-center md:grid-cols-2 gap-10 md:gap-20">
+            <div className="my-16 py-16 md:py-32 rounded-xl  grid grid-cols-1 items-center md:grid-cols-2 gap-10 md:gap-20">
                 {/* Content section */}
                 <div
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'

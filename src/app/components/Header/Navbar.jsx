@@ -17,11 +17,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import dynamic from 'next/dynamic';
+import { usePathname } from 'next/navigation'; // Use usePathname instead of useRouter
+const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const pathname = usePathname(); // Get the current path
 
   // Page links
   const pages = ['Home', 'About', 'Services', 'Blog'];
@@ -74,7 +80,7 @@ export default function Navbar() {
 
   return (
 
-    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#161a0c', color: '#bada55', height: '80px' }}>
+    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#161a0c', color: '#fdfefb', height: '80px' }}>
       <Container maxWidth="xl" disableGutters>
         <Toolbar sx={{ justifyContent: 'space-between' ,alignContent: 'center', alignItems: 'center' , mt:1}}>
           {/* Logo on the left */}
@@ -84,20 +90,24 @@ export default function Navbar() {
 
           {/* Page links (for desktop only) */}
           {!isMobile && (
-            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'start' }}>
+              <div className='flex justify-between gap-10'>
               {pages.map((page, index) => (
-                <Button key={index} sx={{ margin: '0 8px', color: '#000' }}>
+                <p key={index} style={{
+                  margin: '0 8px',
+                  color: pathname === `/${page.toLowerCase()}` ? 'green' : '#fdfefb', // Check if the current path matches
+                }}>
                   {page}
-                </Button>
+                </p>
               ))}
+              </div>
             </Box>
           )}
 
           {/* Contact Us button (desktop only) */}
           {!isMobile && (
-            <Button variant="contained" color="primary">
-              Contact Us
-            </Button>
+            <MyCustomButton text="Contact Us" href="/contact" />
+           
           )}
 
           {/* Hamburger icon (mobile only) */}

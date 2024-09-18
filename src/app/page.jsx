@@ -48,13 +48,13 @@ export default function Home() {
       <EmblaCarousel options={OPTIONS} />
 
       {InforSectionData.map((section, index) => (
-        <div className="mx-5 bg-[#bada55] rounded-[60px]">
+        <div className="mx-5 bg-[#bada55] rounded-2xl md:rounded-[60px]">
           <InfoSection key={index} {...section} />
         </div>
       ))}
-      <div className="mx-5 bg-[#bada55] rounded-[60px]">
+      <div className="mx-5 bg-[#bada55] rounded-2xl md:rounded-[60px]">
         <Container maxWidth="xl">
-          <div className="py-32 ">
+          <div className="py-16 md:py-32 ">
             <h3 className="font-black leading-none text-[#161a0c] text-center">AI-powered insights on information<br /> security services
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-24 gap-10">

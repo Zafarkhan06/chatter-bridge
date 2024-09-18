@@ -16,10 +16,12 @@ const CustomButton = styled(Button)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
+  border: "1px solid #ff6347",
   transition: 'background-color 0.3s ease', // Smooth transition for hover effect
   '&:hover': {
     backgroundColor: "#161a0c", // Change button color on hover
-    color: "#bada55"
+    color: "#bada55",
+    border: "1px solid #ff6347",
   },
 }));
 
@@ -48,11 +50,11 @@ const MyCustomButton = ({ text, href }) => {
     <Link href={href} passHref>
       <CustomButton
         component="a" // Makes the button act like a link
-        className='text-[#161a0c] group-hover:text-[#bada55] flex items-center'
+        className='text-[#161a0c] group-hover:text-[#bada55] hover:border hover:border-white flex items-center'
       >
-        <span className='pr-5'>{text}</span>
-        <IconCircle className='transition-colors group-hover:bg-[#bada55]'>
-          <ArrowForwardIcon className='text-[#ff6347] group-hover:text-[#161a0c]' />
+        <span className='pr-5 group-hover:text-white'>{text}</span>
+        <IconCircle className='transition-colors group-hover:bg-[#bada55] group-hover:border group-hover:border-white'>
+          <ArrowForwardIcon className='text-[#ff6347] group-hover:text-white' />
         </IconCircle>
       </CustomButton>
     </Link>
