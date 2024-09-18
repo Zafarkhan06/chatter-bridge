@@ -4,15 +4,15 @@ import logo from "../../../../public/asset/swif-cabs-logo.png"
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className="bg-[#bada55] mx-5 px-5 md:px-10 rounded-2xl md:rounded-[60px] my-10">
+        <footer className="bg-[#ff6347] mx-5 px-5 md:px-10 rounded-2xl md:rounded-[60px] my-10">
             <div>
                 <Container
                     disableGutters={true}
                     maxWidth="xl"
                 >
-                    <div className="relative text-[#161a0c] pt-20  md:pt-32">
+                    <div className="relative text-white pt-20  md:pt-32">
                         <div className="container">
-                            <div className="nc-SectionSubscribe2 relative grid gap-10 text-[#161a0c] lg:grid-cols-4 lg:gap-0 ">
+                            <div className="nc-SectionSubscribe2 relative grid gap-10 text-white lg:grid-cols-4 lg:gap-0 ">
                                 <div className="col-span-1 space-y-5">
                                     <a className="flex cursor-pointer items-center gap-1 font-medium" href="/">
                                         <Image
@@ -21,7 +21,7 @@ const Footer = () => {
                                             className="w-full md:w-2/3 cursor-pointer"
                                         />
                                     </a>
-                                    <p className="font-light text-[#161a0c]">
+                                    <p className="font-light text-white">
                                         Swift Cabs offers 24/7 taxi services with modern vehicles and courteous drivers, ensuring timely, memorable journeys in Kettering and Wellingborough.                                        </p>
 
                                     <div className="flex items-center gap-3">
@@ -40,7 +40,7 @@ const Footer = () => {
                                 </div>
                                 <div className="flex md:flex-row flex-col justify-around items-start gap-10 lg:ml-20 col-span-2">
                                     <div className="space-y-5 w-full md:w-2/4 ">
-                                        <div className="text-xl text-[#161a0c] font-medium">Pages</div>
+                                        <div className="text-xl text-white font-medium">Pages</div>
                                         <div className="flex flex-col items-start justify-center gap-5">
                                             <div className="relative inline-block"><a className="underline-text" href="/">Home</a>
                                             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-5 flex flex-col items-center justify-center border-t border-[#161a0c]/10 py-6 text-[#161a0c] 2xl:py-5">
+                            <div className="mt-5 flex flex-col items-center justify-center border-t border-white/10 py-6 text-white 2xl:py-5">
                                 <div>
                                     <p className='text-center w-full'>© <span> All rights reserved by</span>
                                         <span><a className="font-semibold pl-2" target="_blank" href="https://devspherelabs.com/">Swift Cabs.</a>

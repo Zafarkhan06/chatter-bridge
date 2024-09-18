@@ -8,7 +8,7 @@ import Link from 'next/link';
 const CustomButton = styled(Button)(({ theme }) => ({
   padding: '6px 10px 6px 40px',
   borderRadius: '50px', // Rounded border
-  backgroundColor: "#ff6347",
+  backgroundColor: "white",
   color: "red",
   textTransform: 'none', // Prevent text from being uppercased
   fontSize: '16px',
@@ -54,7 +54,7 @@ const MyCustomButton = ({ text, href }) => {
       >
         <span className='pr-5 group-hover:text-white'>{text}</span>
         <IconCircle className='transition-colors group-hover:bg-[#bada55] group-hover:border group-hover:border-white'>
-          <ArrowForwardIcon className='text-[#ff6347] group-hover:text-white' />
+          <ArrowForwardIcon className='text-white group-hover:text-white' />
         </IconCircle>
       </CustomButton>
     </Link>
