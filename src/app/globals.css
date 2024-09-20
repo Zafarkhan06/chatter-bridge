@@ -43,7 +43,11 @@ html {
 }
 
 h1 {
-  font-size: clamp(3rem, 5vw + 1rem, 5.6rem); /* 90px on large, scales on smaller */
+  font-size: clamp(
+    3rem,
+    5vw + 1rem,
+    5.6rem
+  ); /* 90px on large, scales on smaller */
 }
 
 h2 {
@@ -71,8 +75,18 @@ p {
 }
 
 .glassEffect {
-  background: rgba(255,255,255,0.5);
--webkit-backdrop-filter: blur(3px);
-backdrop-filter: blur(3px);
-border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.backgroundImageContainer {
+  height: 100vh; /* Full viewport height */
+  background-image: url("../../public/asset/about-main-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

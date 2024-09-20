@@ -1,7 +1,12 @@
-"use client"
-import React, { useEffect, useState, useRef } from 'react';
+"use client";
+import React, { useEffect, useState, useRef } from "react";
 
-const CountingNumberComponent = ({ text, endNumber, duration = 1000 }) => {
+const CountingNumberComponent = ({
+  text,
+  endNumber,
+  duration = 1000,
+  smtext,
+}) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
@@ -13,16 +18,16 @@ const CountingNumberComponent = ({ text, endNumber, duration = 1000 }) => {
         const windowHeight = window.innerHeight;
         if (rect.top < windowHeight && rect.bottom >= 0) {
           setInView(true);
-          window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener("scroll", handleScroll);
         }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Check immediately on mount
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -46,9 +51,15 @@ const CountingNumberComponent = ({ text, endNumber, duration = 1000 }) => {
   }, [inView, endNumber, duration]);
 
   return (
-    <div ref={ref} className="">
-        <h3 className='font-semibold text-left text-[#161a0c]'>{count}{text}</h3>
-        <p className='font-semibold text-[#161a0c]'>Key Client Average Speed to Answer</p>
+    <div ref={ref} className="leading-snug">
+      <h1 className="font-bold text-white tracking-wide text-center">
+        {count}
+        {smtext}
+      </h1>
+      <h6 className="text-white">{text}</h6>
+      {/* <p className="font-semibold text-white">
+        Key Client Average Speed to Answer
+      </p> */}
     </div>
   );
 };
