@@ -24,8 +24,8 @@ const InfoSection = ({
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'
                         }`}
                 >
-                    <h5 className="leading-none text-white">{title}</h5>
-                    <h2 className="font-black leading-none text-white">
+                    <h5 className="leading-none text-[#172806]">{title}</h5>
+                    <h2 className="font-black leading-none text-[#172806]">
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}
@@ -33,7 +33,7 @@ const InfoSection = ({
                             </React.Fragment>
                         ))}
                     </h2>
-                    <p className="text-white font-semibold">{description}</p>
+                    <p className="text-[#172806] font-semibold">{description}</p>
                     <div className="w-fit">
                         <MyCustomButton text={buttonText} href={buttonHref} />
                     </div>

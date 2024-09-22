@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Button } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -33,7 +34,7 @@ const IconCircle = styled('div')({
   width: '42px',
   height: '42px',
   borderRadius: '50%',
-  backgroundColor: '#161a0c', // Circle background color
+  backgroundColor: '#172806', // Circle background color
   marginLeft: '10px',
   '& svg': {
     color: '#ff6347', // Arrow color inside the circle
@@ -50,11 +51,11 @@ const MyCustomButton = ({ text, href }) => {
     <Link href={href} passHref>
       <CustomButton
         component="a" // Makes the button act like a link
-        className='text-[#161a0c] group-hover:text-[#bada55] hover:border hover:border-white flex items-center'
+        className='text-[#afe57f] bg-[#172806] group-hover:text-[#bada55] hover:border hover:border-white flex items-center'
       >
         <span className='pr-5 group-hover:text-white'>{text}</span>
-        <IconCircle className='transition-colors group-hover:bg-[#bada55] group-hover:border group-hover:border-white'>
-          <ArrowForwardIcon className='text-white group-hover:text-white' />
+        <IconCircle className='transition-colors group-hover:bg-[#bada55] bg-[#afe57f] group-hover:border group-hover:border-white'>
+          <ArrowForwardIcon className='text-[#172806] group-hover:text-white' />
         </IconCircle>
       </CustomButton>
     </Link>

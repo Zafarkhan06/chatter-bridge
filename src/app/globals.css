@@ -20,7 +20,7 @@ body {
   font-family: var(--font-montserrat), Arial, sans-serif; /* Apply Montserrat */
   margin: 0;
   padding: 0;
-  background-color: #161a0c;
+  background-color: #172806;
 }
 
 @layer utilities {
@@ -75,4 +75,75 @@ p {
 -webkit-backdrop-filter: blur(3px);
 backdrop-filter: blur(3px);
 border: 1px solid rgba(255,255,255,0.25);
+}
+
+.btn_main_wrap {
+  background-color: #afe57f;
+  color: #172806;
+  cursor: pointer;
+  border-radius: .4rem;
+  min-width: 11.8rem;
+  padding: 1.1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: filter .2s;
+  display: inline-block;
+}
+.btn_main_list {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.coolBeans {
+  background-color: #afe57f; /* Updated background color */
+  color: #172806; /* Updated text color */
+  border: 2px solid #172806; /* Updated border color to match text */
+  border-radius: 0.4rem; /* Updated border radius */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem; /* Updated font size */
+  font-weight: 700; /* Updated font weight */
+  line-height: 1; /* Added line-height */
+  overflow: hidden;
+  padding: 1.1rem 1.5rem; /* Updated padding */
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out, filter 0.2s; /* Added filter transition */
+  will-change: transform;
+  z-index: 0;
+  min-width: 11.8rem; /* Updated minimum width */
+}
+
+.coolBeans::after {
+  background-color: #edefec; /* Updated background color */
+  border-radius: 0.4rem; /* Updated border radius */
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+
+.coolBeans:hover {
+  border: 1px solid transparent;
+  color: #172806; /* Maintained text color */
+  transform: scale(1.05);
+  will-change: transform;
+  filter: brightness(1.1); /* Added hover effect to slightly brighten */
 }

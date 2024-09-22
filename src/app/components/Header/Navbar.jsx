@@ -22,6 +22,7 @@ import { usePathname } from 'next/navigation'; // Use usePathname instead of use
 const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
   ssr: false, // Disable server-side rendering for this component
 });
+import Link from 'next/link';
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -80,7 +81,7 @@ export default function Navbar() {
 
   return (
 
-    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#161a0c', color: '#fdfefb', height: '80px' }}>
+    <AppBar position={`${isMobile ? 'fixed': 'static'}`} sx={{ backgroundColor: '#172806', color: '#afe57f', height: '80px' , boxShadow: "none"}}>
       <Container maxWidth="xl" disableGutters>
         <Toolbar sx={{ justifyContent: 'space-between' ,alignContent: 'center', alignItems: 'center' , mt:1}}>
           {/* Logo on the left */}
@@ -93,12 +94,12 @@ export default function Navbar() {
             <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'start' }}>
               <div className='flex justify-between gap-10'>
               {pages.map((page, index) => (
-                <p key={index} style={{
+                <Link cla href={`/${page.toLowerCase()}`} key={index} style={{
                   margin: '0 8px',
-                  color: pathname === `/${page.toLowerCase()}` ? 'green' : '#fdfefb', // Check if the current path matches
-                }}>
+                  color: pathname === `/${page.toLowerCase()}` ? 'white' : '#afe57f', // Check if the current path matches
+                }} className='text-xl font-semibold hover:text-white'>
                   {page}
-                </p>
+                </Link>
               ))}
               </div>
             </Box>
