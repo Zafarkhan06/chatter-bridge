@@ -77,7 +77,7 @@ function Services() {
             </div>
             <div className='bg-white py-16 md:py-24'>
                 <Container maxWidth="xl">
-                    <h2 className='font-black uppercase tracking-tighter text-[#3d3f3b]'>Services designed to HELP YOU grow   </h2>
+                    <h2 className='font-black uppercase tracking-tighter text-[#172806]'>Services designed to HELP YOU grow   </h2>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={services2}
