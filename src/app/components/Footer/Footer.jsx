@@ -4,7 +4,7 @@ import logo from "../../../../public/asset/swif-cabs-logo.png"
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className=" mx-5 px-5 md:px-10 rounded-2xl md:rounded-[60px] my-10">
+        <footer className="  px-5 md:px-10 rounded-2xl md:rounded-[60px] my-10">
             <div>
                 <Container
                     disableGutters={true}

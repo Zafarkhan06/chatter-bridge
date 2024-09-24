@@ -147,3 +147,52 @@ border: 1px solid rgba(255,255,255,0.25);
   will-change: transform;
   filter: brightness(1.1); /* Added hover effect to slightly brighten */
 }
+
+.coolBeanSecond {
+  background-color: #172806; /* Updated background color */
+  color: #afe57f; /* Updated text color */
+  border: 1px solid #172806; /* Updated border color to match text */
+  border-radius: 5rem; /* Updated border radius */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; /* Updated font size */
+  font-weight: 700; /* Updated font weight */
+  line-height: 1; /* Added line-height */
+  overflow: hidden;
+  padding: 5px 5px 5px  2.5rem; /* Updated padding */
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out, filter 0.2s; /* Added filter transition */
+  will-change: transform;
+  z-index: 0;
+  min-width: 11.8rem; /* Updated minimum width */
+  margin: 1rem 0rem 1rem 0rem; /* Added margin */
+}
+
+.coolBeanSecond::after {
+  background-color: #edefec; /* Updated background color */
+  border-radius: 0.4rem; /* Updated border radius */
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.coolBeanSecond:hover::after {
+  transform: translate(0, 0);
+}
+
+.coolBeanSecond:hover {
+  border: 1px solid transparent;
+  color: #172806; /* Maintained text color */
+  transform: scale(1.05);
+  will-change: transform;
+  filter: brightness(1.1); /* Added hover effect to slightly brighten */
+}

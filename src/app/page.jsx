@@ -21,25 +21,17 @@ export default function Home() {
   const SLIDE_COUNT = 5
   const InforSectionData = [
     {
-      "title": "Reduce Operational Cost",
-      "subtitle": "Cost-Efficient,<br/>But Never Cheap",
-      "description": "Quality service doesn’t have to break the bank. We’ve mastered the art of providing top-tier service without top-tier costs.",
+      "title": "Connecting Businesses with Custom Talent",
+      "subtitle": "Tailored Teams<br/> for Real Results",
+      "description": "With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At TheChatterBridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.",
       "buttonText": "Get Started",
       "buttonHref": "/contact",
       "imageSrc": costEffiecentImage,
       "imageAlt": "Cost Efficient Image",
-      "reverseLayout": false
+      "reverseLayout": false,
+      'listPoints': ['Custom Talent Acquisition', 'Cost-Effective Solutions'] // List for this section
+
     },
-    // {
-    //   "title": "Boost Your Productivity",
-    //   "subtitle": "Work Smart,<br/>Not Hard",
-    //   "description": "Achieve your goals with minimal effort. Leverage the best tools and practices to skyrocket your efficiency.",
-    //   "buttonText": "Learn More",
-    //   "buttonHref": "/learn-more",
-    //   "imageSrc": Info2ndImage,
-    //   "imageAlt": "Boost Productivity",
-    //   "reverseLayout": true
-    // }
   ]
 
 

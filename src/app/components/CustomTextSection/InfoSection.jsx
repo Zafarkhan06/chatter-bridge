@@ -1,10 +1,8 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { Container } from '@mui/material';
-const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
-    ssr: false, // Disable server-side rendering for this component
-});
+import { Container, } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import ReusableButton from '../ReusableButton/ReusableButton';
 
 const InfoSection = ({
     title,
@@ -15,6 +13,7 @@ const InfoSection = ({
     imageSrc,
     imageAlt,
     reverseLayout = false, // Prop to control layout direction
+    listPoints = []
 }) => {
     return (
         <Container maxWidth="xl">
@@ -24,8 +23,8 @@ const InfoSection = ({
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'
                         }`}
                 >
-                    <h5 className="leading-none text-[#172806]">{title}</h5>
-                    <h2 className="font-black leading-none text-[#172806]">
+                    <h5 className="leading-none text-[#172806] tracking-tight">{title}</h5>
+                    <h2 className="font-black uppercase leading-none tracking-tight text-[#172806]">
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}
@@ -34,8 +33,19 @@ const InfoSection = ({
                         ))}
                     </h2>
                     <p className="text-[#172806] font-semibold">{description}</p>
+                    <div className='flex gap-5 items-center justify-start flex-wrap'>
+                        {
+                            listPoints.map((point, index) => (
+                                <div className='flex items-center text-[#172806] gap-2 text-xl font-semibold leading-none'>
+                                    <CheckCircleIcon className='text-[#172806]' />
+                                    {point}
+                                </div>
+                            ))
+                        }
+                    </div>
                     <div className="w-fit">
-                        <MyCustomButton text={buttonText} href={buttonHref} />
+                        {/* <MyCustomButton text={buttonText} href={buttonHref} /> */}
+                       <ReusableButton href={buttonHref} text={buttonText}/>
                     </div>
                 </div>
 

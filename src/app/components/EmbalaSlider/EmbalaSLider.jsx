@@ -3,15 +3,8 @@ import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { Container } from '@mui/material';
-import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import styles from './EmbalaSlider.module.css'; // Custom CSS for styling
-
-// Dynamically import the custom button component
-const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
-    ssr: false, // Disable server-side rendering for this component
-});
-
-// Import images
 import testImage1 from "../../../../public/asset/testing-image-1.jpg";
 import testImage2 from "../../../../public/asset/testing-image-2.jpg";
 import testImage3 from "../../../../public/asset/testing-image-3.jpg";
@@ -22,19 +15,26 @@ const slideContent = [
         image: testImage1,
         title: 'effortlessly.',
         subtitle: 'Get more done,',
-        description: 'A study by the Asian Journal of Economics and Banking found that reducing costs in operations while enhancing efficiency boosts profitability and competitive advantage.'
+        description: 'We build tailored offshore teams, designed to boost productivity, <br/>and integrate with your workflow effortlessly.',
+        button: 'Discover Our Solutions',
+        href: '/services'
     },
     {
         image: testImage2,
-        title: 'Unlock your goals',
-        subtitle: 'without breaking the bank.',
-        description: 'Save up to 60% compared to hiring locally.<br/>Get the same results.<br/>Achieve the same goal.'
+        title: 'Talent, Tailored Success.',
+        subtitle: 'No one-size-fits-all.',
+        description: 'At TheChatterBridge, we handpick teams that align with your<br/> business’s culture, industry, and growth goals.',
+        button: 'Find Your Perfect Fit',
+        href: '/contact'
+
     },
     {
         image: testImage3,
-        title: 'Keep your team,',
-        subtitle: 'not the overhead.',
-        description: 'Save up to 60% compared to hiring locally.<br/>Get the same results.<br/>Achieve the same goal.'
+        title: 'With the right talent.',
+        subtitle: 'Drive growth faster,',
+        description: 'We provide you with industry-specific talent, empowering your <br/> business to grow and achieve results quickly.',
+        button: 'Get Your Dream Team',
+        href: '/contact'
     }
 ];
 
@@ -65,7 +65,9 @@ const EmblaCarousel = (props) => {
                                             {slide.title}
                                         </h1>
                                         <div className="w-fit mt-10">
-                                            <MyCustomButton text="Get Started" href="/contact" />
+                                            <Link href={slide.href}>
+                                                <button className='coolBeans w-full'>{slide.button}</button>
+                                            </Link>
                                         </div>
                                         <p className="font-medium mt-16" dangerouslySetInnerHTML={{ __html: slide.description }} />
                                     </div>
