@@ -51,12 +51,12 @@ const CountingNumberComponent = ({
   }, [inView, endNumber, duration]);
 
   return (
-    <div ref={ref} className="leading-snug">
-      <h1 className="font-bold text-white tracking-wide text-center">
+    <div ref={ref} className="leading-[1]">
+      <h1 className="font-bold text-[#ff6347] tracking-wide text-center">
         {count}
         {smtext}
       </h1>
-      <h6 className="text-white">{text}</h6>
+      <h6 className="text-[#ff6347] text-center font-semibold">{text}</h6>
       {/* <p className="font-semibold text-white">
         Key Client Average Speed to Answer
       </p> */}

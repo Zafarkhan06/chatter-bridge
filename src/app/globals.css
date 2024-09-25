@@ -81,12 +81,15 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.backgroundImageContainer {
+.backgroundImageonxl {
   height: 100vh; /* Full viewport height */
-  background-image: url("../../public/asset/about-main-img.jpg");
+
+  background-image: url("../../public/asset/about-main-original.jpg");
   background-size: cover;
-  background-position: center;
+
+  background-position: center right;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-blend-mode: lighten;
 }
