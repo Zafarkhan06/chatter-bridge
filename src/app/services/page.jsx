@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import MyCustomButton from '../components/CustomButton/CustomButton';
 import services1 from '../../../public/asset/services-1.jpg';
 import services2 from '../../../public/asset/services-2.jpg';
 import services3 from '../../../public/asset/services-3.jpg';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 import Image from 'next/image';
+import ReusableButton from '../components/ReusableButton/ReusableButton';
 
 function Services() {
     return (
@@ -102,7 +102,7 @@ function Services() {
                 <p className="text-[#172806] mt-6 font-semibold text-center">Explore how NETSOL's professional services can strengthen your infrastructure with unparalleled security and uncompromised services.
                 </p>
                 <div className="w-full justify-center flex mt-10">
-                    <MyCustomButton text="Connect with us" href="/contact" />
+                    <ReusableButton text="Connect with us" href="/contact" />
                 </div>
             </div>
         </>

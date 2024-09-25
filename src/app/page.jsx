@@ -3,18 +3,13 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import EmblaCarousel from "./components/EmbalaSlider/EmbalaSLider";
 import { Container } from "@mui/material";
-import CountingNumberComponent from "./components/CountingNumber/CountingNumberComponent";
 import costEffiecentImage from "../../public/asset/cost-efficeint-never-cheap.jpg";
 import InfoSection from "./components/CustomTextSection/InfoSection";
-import Info2ndImage from "../../public/asset/image-2nd-portion (3).png";
 import GoalPng from "../../public/asset/goal.svg";
 import SuccessPng from "../../public/asset/sucess.svg";
 import SavingPng from "../../public/asset/saving.svg";
 import ServicesImage from "../../public/asset/services-home.jpg";
-
-const MyCustomButton = dynamic(() => import('./components/CustomButton/CustomButton'), {
-  ssr: false, // Disable server-side rendering for this component
-});
+import ReusableButton from "./components/ReusableButton/ReusableButton";
 
 export default function Home() {
   const OPTIONS = { dragFree: false, loop: true }
@@ -138,13 +133,13 @@ export default function Home() {
 
         </Container>
       </div>
-      <div className=" bg-[#afe57f] py-20 my-16">
+      <div className=" bg-[#afe57f] py-20 mt-16">
         <h3 className="font-black leading-none text-[#172806] text-center">Ready to get started?
         </h3>
         <p className="text-[#172806] mt-6 font-semibold text-center">Explore how NETSOL's professional services can strengthen your infrastructure with unparalleled security and uncompromised services.
         </p>
         <div className="w-full justify-center flex mt-10">
-          <MyCustomButton text="Connect with us" href="/contact" />
+          <ReusableButton text="Connect with us" href="/contact" />
         </div>
       </div>
     </>

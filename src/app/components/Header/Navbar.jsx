@@ -35,7 +35,12 @@ export default function Navbar() {
     setClientPathname(pathname); // Set the client-side pathname
   }, [pathname]);
   // Page links
-  const pages = ['Home', 'About', 'Services', 'Blog'];
+  const pages = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Blog', path: '/blog' },
+  ];
 
   // Open/close drawer
   const toggleDrawer = (open) => () => {
@@ -56,7 +61,7 @@ export default function Navbar() {
         backgroundColor: '#afe57f',
       }}
       role="presentation"
-  
+
     >
       {/* Close button at top right */}
       <IconButton
@@ -71,14 +76,16 @@ export default function Navbar() {
       <List>
         {pages.map((page, index) => (
           <div key={index} className='flex flex-col justify-between items-stretch mt-3'>
-          {/* <ListItem button  onClick={toggleDrawer(false)}>
-            <ListItemText primary={page} />
-          </ListItem> */}
-          <Link onClick={toggleDrawer(false)} href={`/${page.toLowerCase()}`}  style={{
-            color: clientPathname  === `/${page.toLowerCase()}` ? 'white' : '#172806', // Check if the current path matches
-          }} className='text-xl font-semibold hover:text-white'>
-            {page}
-          </Link>
+            <Link
+              onClick={toggleDrawer(false)}
+              href={page.path} // Use the path from the object
+              style={{
+                color: clientPathname === page.path ? 'white' : '#172806',
+              }}
+              className='text-xl font-semibold hover:text-white'
+            >
+              {page.name}
+            </Link>
           </div>
         ))}
       </List>
@@ -94,7 +101,7 @@ export default function Navbar() {
 
   return (
     <div className='bg-[#172806] py-4'>
-      <AppBar position={`${isMobile ? 'fixed' : 'static'}`} sx={{color: '#afe57f', backgroundColor: "#172806", boxShadow: "none"}}>
+      <AppBar position={`${isMobile ? 'fixed' : 'static'}`} sx={{ color: '#afe57f', backgroundColor: "#172806", boxShadow: "none" }}>
         <Container maxWidth="xl" disableGutters>
           <Toolbar sx={{ justifyContent: 'space-between', alignContent: 'center', alignItems: 'center', }}>
             {/* Logo on the left */}
@@ -107,11 +114,16 @@ export default function Navbar() {
               <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'start' }}>
                 <div className='flex justify-between gap-10'>
                   {pages.map((page, index) => (
-                    <Link href={`/${page.toLowerCase()}`} key={index} style={{
-                      margin: '0 8px',
-                      color: clientPathname  === `/${page.toLowerCase()}` ? 'white' : '#afe57f', // Check if the current path matches
-                    }} className='text-xl font-semibold hover:text-white'>
-                      {page}
+                    <Link
+                      href={page.path} // Use the path from the object
+                      key={index}
+                      style={{
+                        margin: '0 8px',
+                        color: clientPathname === page.path ? 'white' : '#afe57f',
+                      }}
+                      className='text-xl font-semibold hover:text-white'
+                    >
+                      {page.name}
                     </Link>
                   ))}
                 </div>

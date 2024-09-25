@@ -59,33 +59,42 @@ function AboutUS() {
             </Container>
             <div className='bg-white'>
 
-            <Container maxWidth="xl">
-                <div className='py-10 md:py-20'>
-                    <h3 className='font-black leading-none uppercase tracking-tight text-[#172806]'>Your Competitive Advantage
-                    </h3>
-                    <h6 className=' tracking-tight text-[#172806] mt-3'>Seamless Integration for Lasting Success in Every Aspect of Your Business
-                    </h6>
-                    <div className='grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 items-start gap-8'>
-                        <div className='flex'>
-                            <div className='bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-16'>
-                                <h5 className='font-black uppercase tracking-tight leading-none text-[#172806]'>Experience and Expertise </h5>
-                                <p className='font-semibold text-lg md:text-2xl text-[#172806] mt-10 '>TheChatterBridge is founded on years of hands-on experience in sales and marketing. We’ve worked with numerous entrepreneurs to strategize their sales SOPs and optimize their teams’ workflows. Our depth of knowledge allows us to identify and connect you with talent that not only meets your needs but also drives your success.</p>
+                <Container maxWidth="xl">
+                    <div className='py-10 md:py-20'>
+                        <h3 className='font-black leading-none uppercase tracking-tight text-[#172806]'>Your Competitive Advantage
+                        </h3>
+                        <h6 className=' tracking-tight text-[#172806] mt-3'>Seamless Integration for Lasting Success in Every Aspect of Your Business
+                        </h6>
+                        <div className='grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 items-start gap-8'>
+                            <div className='flex'>
+                                <div className='bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-16'>
+                                    <h5 className='font-black uppercase tracking-tight leading-none text-[#172806]'>Experience and Expertise </h5>
+                                    <p className='font-semibold text-lg md:text-2xl text-[#172806] mt-10 '>TheChatterBridge is founded on years of hands-on experience in sales and marketing. We’ve worked with numerous entrepreneurs to strategize their sales SOPs and optimize their teams’ workflows. Our depth of knowledge allows us to identify and connect you with talent that not only meets your needs but also drives your success.</p>
+                                </div>
+                            </div>
+                            <div className='flex'>
+                                <div className='bg-[#172806] rounded-xl flex-grow shadow-inner p-8 py-16'>
+                                    <h5 className='font-black uppercase tracking-tight leading-none flex items-center gap-2 text-white'>
+                                        <svg width="47" height="53" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
+                                            <path d="M13 27.9242L24.3363 39L45 19" stroke="#172806" stroke-width="7.73889" />
+                                        </svg>Visionary Founders</h5>
+                                    <p className='font-semibold text-lg md:text-2xl text-white mt-10 pb-3 '>Founded by Furqan and Shehzer, lifelong friends with a shared dream of helping businesses scale, TheChatterBridge is more than a company—it’s a partnership. We aim to work alongside you, delivering tailor-made solutions that generate real value for your business.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className='flex'>
-                            <div className='bg-[#172806] rounded-xl flex-grow shadow-inner p-8 py-16'>
-                                <h5 className='font-black uppercase tracking-tight leading-none flex items-center gap-2 text-white'>
-                                    <svg width="47" height="53" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
-                                        <path d="M13 27.9242L24.3363 39L45 19" stroke="#172806" stroke-width="7.73889" />
-                                    </svg>Visionary Founders</h5>
-                                <p className='font-semibold text-lg md:text-2xl text-white mt-10 pb-3 '>Founded by Furqan and Shehzer, lifelong friends with a shared dream of helping businesses scale, TheChatterBridge is more than a company—it’s a partnership. We aim to work alongside you, delivering tailor-made solutions that generate real value for your business.</p>
-                            </div>
-                        </div>
-                    </div>
 
+                    </div>
+                </Container>
+            </div>
+            <div className=" bg-[#afe57f] py-20">
+                <h3 className="font-black leading-none text-[#172806] text-center">Ready to get started?
+                </h3>
+                <p className="text-[#172806] mt-6 font-semibold text-center">Explore how NETSOL's professional services can strengthen your infrastructure with unparalleled security and uncompromised services.
+                </p>
+                <div className="w-full justify-center flex mt-10">
+                    <ReusableButton text="Connect with us" href="/contact" />
                 </div>
-            </Container>
             </div>
         </>
     )
