@@ -18,7 +18,7 @@ import emailSupport from "../../public/asset/palnt-plastic (3).png";
 import Link from "next/link";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import TeamBuilding from "../../public/asset/team-building (1).png";
-import Scalable from "../../public/asset/team-building (2).png";
+import Scalable from "../../public/asset/scalabale-business.jpg";
 
 export default function Home() {
   const OPTIONS = { dragFree: false, loop: true }
