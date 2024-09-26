@@ -165,15 +165,14 @@ function AboutUS() {
           </div>
         </Container>
       </div>
-      <div className=" bg-[#afe57f] py-20">
-        <h3 className="font-black leading-none text-[#172806] text-center">
+      <div className=" bg-[#afe57f] py-16">
+        <h3 className="font-black leading-none uppercase text-[#172806] text-center">
           Ready to get started?
         </h3>
         <p className="text-[#172806] mt-6 font-semibold text-center">
-          Explore how NETSOL's professional services can strengthen your
-          infrastructure with unparalleled security and uncompromised services.
+          Discover how TheChatterBridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
         </p>
-        <div className="w-full justify-center flex mt-10">
+        <div className="w-full justify-center flex mt-6">
           <ReusableButton text="Connect with us" href="/contact" />
         </div>
       </div>

@@ -17,7 +17,7 @@ const InfoSection = ({
 }) => {
     return (
         <Container maxWidth="xl">
-            <div className="my-16 py-16 md:py-32 rounded-xl  grid grid-cols-1 items-center md:grid-cols-2 gap-10 md:gap-20">
+            <div className=" py-16 md:py-32 rounded-xl  grid grid-cols-1 items-center lg:grid-cols-2 gap-10 md:gap-20">
                 {/* Content section */}
                 <div
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'
@@ -28,7 +28,7 @@ const InfoSection = ({
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}
-                                <br />
+                                <br className='hidden lg:block'/>
                             </React.Fragment>
                         ))}
                     </h3>
@@ -51,7 +51,7 @@ const InfoSection = ({
 
                 {/* Image section */}
                 <div className={`flex ${reverseLayout ? 'md:justify-start' : 'md:justify-end'} order-1`}>
-                    <Image src={imageSrc} alt={imageAlt} className="rounded-xl object-cover max-h-[30%] object-center" />
+                    <Image src={imageSrc} alt={imageAlt} quality={100} className="rounded-xl lg:min-h-[550px] object-cover object-center" />
                 </div>
             </div>
         </Container>

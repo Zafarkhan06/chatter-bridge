@@ -40,7 +40,7 @@ export default function Contact() {
                   <p className="text-[#172806]">
                     Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
                   </p>
-                  <ReusableButton text={"Check out our services"} href={"/"} />
+                  <ReusableButton text={"Check our services"} href={"/"} />
                 </div>
 
               </div>

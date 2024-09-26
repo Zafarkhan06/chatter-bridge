@@ -47,8 +47,7 @@ const CountingNumberComponent = ({ text, endNumber, duration = 1000 }) => {
 
   return (
     <div ref={ref} className="">
-        <h3 className='font-semibold text-left text-[#161a0c]'>{count}{text}</h3>
-        <p className='font-semibold text-[#161a0c]'>Key Client Average Speed to Answer</p>
+        <h3 className='font-bold text-center text-[#172806]'>{count}%</h3>
     </div>
   );
 };

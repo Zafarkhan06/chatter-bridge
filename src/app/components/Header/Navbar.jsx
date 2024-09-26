@@ -37,9 +37,8 @@ export default function Navbar() {
   // Page links
   const pages = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
     { name: "Contact us", path: "/contact" },
   ];
 

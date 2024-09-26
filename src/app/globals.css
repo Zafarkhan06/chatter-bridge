@@ -196,3 +196,13 @@ border: 1px solid rgba(255,255,255,0.25);
   will-change: transform;
   filter: brightness(1.1); /* Added hover effect to slightly brighten */
 }
+
+.good-glass {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.91);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(17.6px);
+-webkit-backdrop-filter: blur(17.6px);
+border: 1px solid rgba(255, 255, 255, 0.37);
+}
