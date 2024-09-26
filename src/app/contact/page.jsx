@@ -24,25 +24,25 @@ export default function Contact() {
             <div className="flex flex-col md:w-[45%] ">
               {/* Green Card */}
               <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#afe57f] ">
-              
-                  <div className="flex flex-col justify-center items-start gap-4">
-                    <div className="flex items-center gap-3">
-                      <Image
-                        src={require("../../../public/asset/contact-page-icon.png")}
-                        width={50}
-                        className=""
-                      />
-                      <h6 className="text-[#172806] font-bold tracking-tighter leading-tight">
-                        Let’s Connect and Grow Together
-                      </h6>
-                    </div>
 
-                    <p className="text-[#172806]">
-                      Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
-                    </p>
-                    <ReusableButton text={"Check out our services"} href={"/"} />
+                <div className="flex flex-col justify-center items-start gap-4">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={require("../../../public/asset/contact-page-icon.png")}
+                      width={50}
+                      className=""
+                    />
+                    <h6 className="text-[#172806] font-bold tracking-tighter leading-tight">
+                      Let’s Connect and Grow Together
+                    </h6>
                   </div>
-              
+
+                  <p className="text-[#172806]">
+                    Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
+                  </p>
+                  <ReusableButton text={"Check out our services"} href={"/"} />
+                </div>
+
               </div>
 
               {/* Second Card */}
