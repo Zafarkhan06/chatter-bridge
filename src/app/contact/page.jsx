@@ -46,7 +46,7 @@ export default function Contact() {
               </div>
 
               {/* Second Card */}
-              <div className="rounded-3xl mt-4 mb-10 px-4 py-12 flex-grow bg-[#afe57f]   ">
+              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#afe57f]   ">
                 <Container>
                   <div className="flex flex-col items-start justify-center gap-4">
                     <h6 className="font-bold text-[#172806] leading-none">
