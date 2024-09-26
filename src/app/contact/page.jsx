@@ -1,0 +1,158 @@
+import { Container } from "@mui/material";
+import Image from "next/image";
+import ReusableButton from "../components/ReusableButton/ReusableButton";
+
+export default function Contact() {
+  return (
+    <>
+      {/* Main Heading */}
+      <div className=" my-24">
+        <Container maxWidth="xl">
+          <h1 className="font-black text-center uppercase text-[#afe57f]">
+            Contact US
+          </h1>
+          <h6 className="text-white text-center">
+            We can’t wait to connect with you.
+          </h6>
+        </Container>
+      </div>
+
+      {/* For large Screen */}
+      <div className=" my-24">
+        <Container maxWidth="xl">
+          <div className="flex gap-5 md:gap-20 flex-col md:flex-row items-stretch  justify-between ">
+            <div className="flex flex-col md:w-[45%] ">
+              {/* Green Card */}
+              <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#afe57f] ">
+
+                <div className="flex flex-col justify-center items-start gap-4">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={require("../../../public/asset/contact-page-icon.png")}
+                      width={50}
+                      className=""
+                    />
+                    <h6 className="text-[#172806] font-bold tracking-tighter leading-tight">
+                      Let’s Connect and Grow Together
+                    </h6>
+                  </div>
+
+                  <p className="text-[#172806]">
+                    Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
+                  </p>
+                  <ReusableButton text={"Check out our services"} href={"/"} />
+                </div>
+
+              </div>
+
+              {/* Second Card */}
+              <div className="rounded-3xl mt-4 mb-10 px-4 py-12 flex-grow bg-[#afe57f]   ">
+                <Container>
+                  <div className="flex flex-col items-start justify-center gap-4">
+                    <h6 className="font-bold text-[#172806] leading-none">
+                      Contact Us Directly
+                    </h6>
+                    <p className=" text-[#172806]">
+                      Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
+                    </p>
+                    <div className="flex gap-6 md:flex-row flex-col">
+                      <p className=" text-[#172806]">
+                        Send us an email to: <br />
+                        <span className="font-bold">hello@firmfox.com</span>
+                      </p>
+                      <p className=" text-[#172806]">
+                        Alternatively, you can call:<br />
+                        <span className="font-bold">+971 55 975 8358</span>
+                      </p>
+                    </div>
+                  </div>
+                </Container>
+              </div>
+            </div>
+            <div className="md:w-[55%]">
+              {/* Form Section  */}
+              <div className="bg-[#edefec] rounded-3xl py-8 px-4 mt-10 ">
+                <Container>
+                  <form action="">
+                    <h5 className="text-[#172806] font-bold pb-6">
+                      Send us a message
+                    </h5>
+                    <div className="">
+                      <label htmlFor="fullName">
+                        <p className="text-[#172806] font-bold pb-2 text-2xl">
+                          Full Name
+                        </p>
+
+                        <input
+                          type="email"
+                          id="fullName"
+                          className="w-full border rounded-lg  text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
+                        />
+                      </label>
+                      <label htmlFor="email">
+                        <p className="text-[#172806] font-bold pb-2 pt-6 text-2xl">
+                          Email
+                        </p>
+
+                        <input
+                          type="text"
+                          id="email"
+                          className="w-full border rounded-lg  text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
+                        />
+                      </label>
+                      <label htmlFor="textarea">
+                        <p className="text-[#172806] font-bold pb-2 pt-6 text-2xl">
+                          Message
+                        </p>
+
+                        <textarea
+                          id="textarea"
+                          rows="5"
+                          className="w-full border rounded-lg  text-black pl-4  focus:outline-none focus:border-[#afe57f]"
+                        ></textarea>
+                      </label>
+                      <button className="coolBeans w-full border-none my-6">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </Container>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+
+      {/* Last Card */}
+
+      {/* <div className="rounded-3xl bg-[#edefec] lg:px-10 lg:py-20 lg:mx-32 lg:mt-20 md:mx-20">
+        <Container>
+          <div className="flex flex-col gap-10 p-6 justify-center items-center pt-8 lg:flex-row lg:justify-between ">
+            <Image
+              src={require("../../../public/asset/services-3.jpg")}
+              className="block lg:hidden"
+            />
+            <div className="lg:flex-1 lg:flex lg:flex-col lg:items-start lg:gap-10">
+              <h2 className="font-bold text-[#172806] text-center leading-tight tracking-tighter mt-10 lg:text-start lg:leading-none lg:text-5xl">
+                Launch and Grow Your Business in the UAE
+              </h2>
+              <p className="text-[#172806] text-center lg:text-start">
+                Follow the link below to visit the FirmFox platform, where you
+                can create and manage your business.
+              </p>
+              <div className="flex justify-center items-center">
+                <ReusableButton text={"Get Started Soon"} href={"/"} />
+              </div>
+            </div>
+
+            <Image
+              src={require("../../../public/asset/services-3.jpg")}
+              className="hidden lg:block lg:flex-1"
+            />
+          </div>
+        </Container>
+      </div> */}
+    </>
+  );
+}
