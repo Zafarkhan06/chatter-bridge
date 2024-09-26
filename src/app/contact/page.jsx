@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
       {/* Main Heading */}
-      <div className=" my-36">
+      <div className=" my-24">
         <Container maxWidth="xl">
           <h1 className="font-black text-center uppercase text-[#afe57f]">
             Contact US
@@ -20,11 +20,11 @@ export default function Contact() {
       {/* For large Screen */}
       <div className=" my-24">
         <Container maxWidth="xl">
-          <div className="flex gap-20 flex-col md:flex-row items-stretch  justify-between ">
+          <div className="flex gap-5 md:gap-20 flex-col md:flex-row items-stretch  justify-between ">
             <div className="flex flex-col md:w-[45%] ">
               {/* Green Card */}
               <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#afe57f] ">
-                <Container className="">
+              
                   <div className="flex flex-col justify-center items-start gap-4">
                     <div className="flex items-center gap-3">
                       <Image
@@ -35,18 +35,18 @@ export default function Contact() {
                       <h6 className="text-[#172806] font-bold tracking-tighter leading-tight">
                         Let’s Connect and Grow Together
                       </h6>
-                      </div>
+                    </div>
 
                     <p className="text-[#172806]">
                       Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
                     </p>
                     <ReusableButton text={"Check out our services"} href={"/"} />
                   </div>
-                </Container>
+              
               </div>
 
               {/* Second Card */}
-              <div className="rounded-3xl mt-4 mb-10 px-4 py-10 flex-grow bg-[#afe57f]   ">
+              <div className="rounded-3xl mt-4 mb-10 px-4 py-12 flex-grow bg-[#afe57f]   ">
                 <Container>
                   <div className="flex flex-col items-start justify-center gap-4">
                     <h6 className="font-bold text-[#172806] leading-none">
@@ -55,14 +55,14 @@ export default function Contact() {
                     <p className=" text-[#172806]">
                       Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
                     </p>
-                    <div className="flex gap-6">
-                    <p className=" text-[#172806]">
-                      Send us an email to: <br />
-                      <span className="font-bold">hello@firmfox.com</span>
+                    <div className="flex gap-6 md:flex-row flex-col">
+                      <p className=" text-[#172806]">
+                        Send us an email to: <br />
+                        <span className="font-bold">hello@firmfox.com</span>
                       </p>
                       <p className=" text-[#172806]">
-                      Alternatively, you can call:<br />
-                      <span className="font-bold">+971 55 975 8358</span>
+                        Alternatively, you can call:<br />
+                        <span className="font-bold">+971 55 975 8358</span>
                       </p>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                     <h5 className="text-[#172806] font-bold pb-6">
                       Send us a message
                     </h5>
-                    <div className="pl-4">
+                    <div className="">
                       <label htmlFor="fullName">
                         <p className="text-[#172806] font-bold pb-2 text-2xl">
                           Full Name
