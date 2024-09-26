@@ -24,14 +24,14 @@ const InfoSection = ({
                         }`}
                 >
                     <h5 className="leading-none text-[#172806] tracking-tight">{title}</h5>
-                    <h2 className="font-black uppercase leading-none tracking-tight text-[#172806]">
+                    <h3 className="font-black uppercase leading-none tracking-tight text-[#172806]">
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}
                                 <br />
                             </React.Fragment>
                         ))}
-                    </h2>
+                    </h3>
                     <p className="text-[#172806] font-semibold">{description}</p>
                     <div className='flex gap-5 items-center justify-start flex-wrap'>
                         {
