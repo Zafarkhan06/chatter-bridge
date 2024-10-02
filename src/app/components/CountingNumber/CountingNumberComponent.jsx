@@ -8,7 +8,7 @@ const CountingNumberComponent = ({ text, endNumber, duration = 1000 }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (ref.current) {
+      if (ref.current) { 
         const rect = ref.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         if (rect.top < windowHeight && rect.bottom >= 0) {

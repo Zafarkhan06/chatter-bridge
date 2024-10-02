@@ -19,6 +19,8 @@ import Link from "next/link";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import TeamBuilding from "../../public/asset/team-building (1).png";
 import Scalable from "../../public/asset/scalabale-business.jpg";
+import carSmoke from "../../public/asset/car-smokey.gif";
+import CancelIcon from '@mui/icons-material/Cancel';
 
 export default function Home() {
   const OPTIONS = { dragFree: false, loop: true }
@@ -83,9 +85,67 @@ export default function Home() {
       <EmblaCarousel options={OPTIONS} />
 
 
-      <div className=" bg-[#afe57f] ">
+      <div className=" bg-[#afe57f] pb-52 md:pb-64 ">
         <InfoSection {...InforSectionData[0]} />
       </div>
+
+      <Container maxWidth="xl" sx={{ position: "relative", }}>
+        <div className="flex justify-center my-10 md:mt-32">
+          <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[620px] -top-[330px]" />
+        </div>
+        <div className="mb-20 md:mb-32">
+          <h3 className="font-black uppercase tracking-tight text-[#afe57f] leading-none">
+            Efficient Taxi Dispatching Services
+          </h3>
+          <h6 className=" tracking-tight text-white mt-3">
+            24/7 Dispatching to Keep Your Fleet Moving
+          </h6>
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 items-start gap-8">
+            <div className="flex">
+              <div className="bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-12">
+                <h4 className="font-black uppercase flex items-center gap-4 tracking-tight leading-none text-[#172806]">
+                  <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
+                </h4>
+                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                  <li className="mt-3">Hiring and maintaining an onsite dispatch team with expensive salaries.</li>
+                  <li className="mt-3">Dispatchers available only during business hours, leading to downtime.</li>
+                  <li className="mt-3">No real-time tracking or updates.</li>
+                  <li className="mt-3">Increased overhead from managing in-house teams.</li>
+                  <li className="mt-3">Lack of access to global talent and resources.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-[#edefec] rounded-xl flex-grow shadow-inner p-8 py-12">
+                <h4 className="font-black uppercase tracking-tight leading-none flex items-center gap-4 text-[#172806]">
+                  <svg
+                    width="57"
+                    height="57"
+                    viewBox="0 0 57 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
+                    <path
+                      d="M13 27.9242L24.3363 39L45 19"
+                      stroke="#172806"
+                      stroke-width="7.73889"
+                    />
+                  </svg>
+                  Chatter Bridge Way
+                </h4>
+                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                  <li className="mt-3">Remote, expert dispatchers at a fraction of the cost.                  </li>
+                  <li className="mt-3">Scalable solutions tailored to your fleet’s needs.                  </li>
+                  <li className="mt-3">Real-time tracking and communication for drivers and passengers.                  </li>
+                  <li className="mt-3">Reduced overhead with seamless outsourcing.                  </li>
+                  <li className="mt-3">Flexible services that adapt to the size and specific needs of your operation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
 
       <div className=" bg-[#edefec]">
         <Container maxWidth="xl">
