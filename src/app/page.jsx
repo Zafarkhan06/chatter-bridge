@@ -27,27 +27,27 @@ export default function Home() {
   const SLIDE_COUNT = 5
   const InforSectionData = [
     {
-      "title": "Connecting Businesses with Custom Talent",
-      "subtitle": "Tailored Teams<br/> for Real Results",
+      "title": "Connecting Businesses with Custom Talent ",
+      "subtitle": "Connecting You<br/> with the Right Fit",
       "description": "With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At TheChatterBridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.",
       "buttonText": "Explore Our Services",
       "buttonHref": "/services",
       "imageSrc": costEffiecentImage,
       "imageAlt": "Cost Efficient Image",
       "reverseLayout": false,
-      'listPoints': ['Custom Talent Acquisition', 'Cost-Effective Solutions'] // List for this section
+     // 'listPoints': ['Custom Talent Acquisition', 'Cost-Effective Solutions'] // List for this section
 
     },
     {
       "title": "Goal-oriented Solutions for Your Business",
-      "subtitle": "Elite Talent, <br/>Exceptional sKILLS",
-      "description": "Our offshore professionals are handpicked to bring specialized skills and industry knowledge to your business. Trained to meet your exact requirements, they seamlessly integrate into your operations, ensuring consistent performance and real results.",
+      "subtitle": "Business Expansion <br/>that saves costs",
+      "description": "Our offshore professionals are industry specific knowledge to bring specialized skills and industry knowledge to your businesses. Trained to meet your exact requirements, they seamlessly integrate into your operations, ensuring consistent performance and real results.",
       "buttonText": "Request a proposal",
       "buttonHref": "/contact",
       "imageSrc": ServicesImage2,
       "imageAlt": "Cost Efficient Image",
       "reverseLayout": true,
-      'listPoints': ['Tailored talent aligned with your business needs', 'Skilled teams that deliver measurable impact'] // List for this section
+     // 'listPoints': ['Tailored talent aligned with your business needs', 'Skilled teams that deliver measurable impact'] // List for this section
     }
   ]
 
@@ -91,7 +91,7 @@ export default function Home() {
 
       <Container maxWidth="xl" sx={{ position: "relative", }}>
         <div className="flex justify-center my-10 md:mt-32">
-          <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[620px] -top-[330px]" />
+          <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[600px] -top-[320px]" />
         </div>
         <div className="mb-20 md:mb-32">
           <h3 className="font-black uppercase tracking-tight text-[#afe57f] leading-none">
@@ -228,14 +228,14 @@ export default function Home() {
               altText="services"
               category="Custom Team Building"
               title="Custom-Fit Solutions"
-              description="Admin is the backbone of any business, but one size definitely doesn’t fit all. Big Outsource tailors our services to meet your unique admin and support sv demands."
+              description="Every business relies on solid administrative support, but generic solutions won’t cut it. The Chatter Bridge delivers personalized admin and support services tailored to fit your unique operational demands"
             />
             <ServiceCard
               imageSrc={Scalable}
               altText="services"
               category="Scalability"
               title="Scalability That Keeps Up with You"
-              description="Whether you're a small start-up or a sprawling enterprise, we scale our services to meet your changing needs."
+              description="From nimble start-ups to large enterprises, our services adapt and scale effortlessly to match your evolving business needs"
             />
           </div>
         </Container>

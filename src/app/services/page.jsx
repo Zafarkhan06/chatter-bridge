@@ -21,10 +21,9 @@ function Services() {
             <Container maxWidth="xl">
                 <div className='flex flex-col py-24 md:flex-row md:py-36 gap-10 justify-between items-center'>
                     <div className='md:w-[55%] flex flex-col gap-5 md:gap-10 justify-between'>
-                        <h2 className='leading-none uppercase font-black text-[#afe57f]'>Optimize Services,
-                            Enhance Support
-                        </h2>
-                        <p className='leading-none text-2xl'>We provide support where your business <br className='hidden md:block' /> needs it the most. Start today and outsource any <br className='hidden md:block' /> business process. Try us for free!.</p>
+                        <h3 className='leading-none uppercase font-black text-[#afe57f]'>Maximize Efficiency, Elevate Your Support Solutions
+                        </h3>
+                        <p className='leading-tight text-2xl'> Empower your business with expert support exactly where it’s needed most.Outsource any business process with ease. <br />Get started today with a free trial!</p>
                         <button className='coolBeans w-44'>
                             Contact US
                         </button>
@@ -102,31 +101,27 @@ function Services() {
             </div>
             <div className='bg-[#edefec] py-16 md:py-24'>
                 <Container maxWidth="xl">
-                    <h2 className='font-black uppercase tracking-tighter text-[#3d3f3b]'>Services designed to HELP YOU grow </h2>
+                    <h4 className='font-black uppercase tracking-tighter text-[#3d3f3b]'>Tailored Solutions to Fuel Your Business Growth </h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={customerSupport}
                             altText="services"
                             category="Customer Support"
                             title="Make Every Customer Feel Valued"
-                            description="Tailored responses and attention to individual needs elevate the support experience, fostering a strong connection with your brand. Personalization is key to exceeding expectations and securing loyalty.
-                            <br/>By anticipating customer issues and offering solutions before they escalate, we demonstrate your brand’s commitment to their satisfaction. 
+                            description="Personalized responses and focused attention to each customer's needs create a superior support experience that strengthens your brand's connection with them. Anticipating challenges and providing proactive solutions showcase your brand’s dedication to customer satisfaction, exceeding expectations and building lasting loyalty. 
                             <br/><br/>
                              <i>
-                             Get Your Outsourced Customer Support Services Up and Running in Less Than 7 Days!
+                             Get your outsourced customer support fully operational in under 7 days!
                              </i>"
                         />
                         <ServiceCard
                             imageSrc={telemarketing}
                             altText="services"
                             category="Telemarketing"
-                            title="Boost Sales, Build Connections"
-                            description="Our telemarketing experts connect you with potential clients, helping you grow your business through personalized outreach and effective communication strategies that drive conversions.
-                            <br/>
-                            Leverage our expertise in managing inbound and outbound sales campaigns to efficiently hit your customer contact goals. 
-                            Let us handle the complexities of telemarketing, allowing you to focus on your core business.<br/><br/>
+                            title="MORE OUTREACH, MORE SALES! "
+                            description="Our telemarketing specialists help you engage with potential clients through tailored outreach and proven communication strategies that boost conversions. Harness our expertise in managing both inbound and outbound sales campaigns to consistently meet your customer contact targets. Leave the complexities of telemarketing to us, so you can stay focused on growing your core business.<br/><br/>
                              <i>
-                             3x Your Sales with Outsourced Telemarketing Services
+                             Triple Your Sales with Expert Outsourced Telemarketing Services!
                              </i>
                             "
                         />
@@ -134,35 +129,30 @@ function Services() {
                 </Container>
             </div>
             <div className='bg-[#afe57f] py-16 md:py-24'>
-                <h2 className='hidden md:block font-black uppercase tracking-tighter md:text-center text-[#3d3f3b]'>Streamlined Communication, Anytime</h2>
+
                 <h3 className='md:hidden block font-black uppercase tracking-tighter md:text-center text-[#3d3f3b]'>Streamlined Communication, Anytime</h3>
 
                 <Container maxWidth="xl">
+                    <h3 className='hidden md:block font-black uppercase tracking-tighter md:text-start text-[#3d3f3b]'>Seamless Communication, Around the Clock</h3>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={chatsupport}
                             altText="Chat Support"
                             category="Chat Support"
-                            title="Real-Time Solutions, Real Results"
-                            description="Connect instantly with your customers on live chat at a fraction of the cost. Lower First Response Times (FRTs), boost customer satisfaction and more with live chat support outsourcing.
-                            <br/>Engage your customers instantly with our live chat support. We provide prompt, professional assistance, ensuring quick resolutions and a seamless customer experience every time.
-                            <br/><br/>
+                            title="RAPID RESPONSE, REAL CONNECTION, INSTANT SOLUTIONS, HAPPY CUSTOMERS!"
+                            description="Instantly have your customers connected to a real rep through cost-effective live chat support. Reduce First Response Times (FRTs), enhance customer satisfaction, and elevate engagement with our outsourced live chat solutions. Deliver fast, professional assistance to ensure seamless customer interactions and rapid issue resolution.<br/><br/>
                              <i>
-                            Get Your Outsourced Live Chat Up and Running in Less Than a Week!
+                            Launch Your Outsourced Live Chat Support in Under a Week!
                              </i>"
                         />
                         <ServiceCard
                             imageSrc={virtualassistant}
                             altText="services"
                             category="Virtual Assistant"
-                            title="Productivity Without Boundaries"
-                            description="Our virtual assistants handle administrative tasks, scheduling, and more, allowing you to focus on what matters most.
-                             We offer flexible, reliable support to streamline your day-to-day operations. </br>
-                             We match you with virtual assistants whose skills align with your specific business requirements, ensuring optimal productivity. Make your business life easy by hiring the best VAs – quickly!
-
-                                        <br/><br/>
+                            title="LIMITLESS PRODUCTIVITY"
+                            description="Our virtual assistants expertly manage administrative tasks, scheduling, and more, freeing you to concentrate on what truly matters. We provide flexible and dependable support to enhance your daily operations. We pair you with virtual assistants whose expertise perfectly aligns with your unique business needs, ensuring maximum productivity. Simplify your business operations by quickly hiring top-notch VAs!<br/><br/>
                                                                     <i>
-                                                                    Optimize Your Workflow with Professional Virtual Assistance
+                                                                    Enhance Your Workflow with Professional Virtual Assistance!
                                                                     </i>
                                         "
                         />
@@ -170,20 +160,21 @@ function Services() {
                 </Container>
             </div>
             <div className='bg-white py-16 md:py-24'>
-                <h2 className='font-black uppercase tracking-tighter md:text-center pl-5 text-[#172806]'>Efficiency Through Tailored Assistance                    </h2>
+               
                 <Container maxWidth="xl">
-
+                <h4 className='font-black uppercase tracking-tighter  text-[#172806]'>Streamline Operations with Customized Assistance
+                </h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={answeringServices}
                             altText="services"
                             category="Answering Services"
                             title="Never Miss a Call Again"
-                            description="Ensure every call is answered with our top-tier outsourced answering services. Enhance your customer experience with professional, courteous, and prompt responses, available 24/7.
-                            <br/>Our answering services are designed to help you manage high call volumes, ensuring that every customer inquiry is addressed promptly and professionally.
-                            <br/><br/>
+                            description="Guarantee that every call is handled with our premium outsourced answering services. Elevate your customer experience with professional, friendly, and timely responses available around the clock. Our answering solutions are tailored to efficiently manage high call volumes, ensuring that every customer inquiry is met with prompt and professional care.
+<br/><br/>
                                 <i>
-                                Get Your Outsourced Answering and Running in < 7 Days!
+                                Launch Your Outsourced Answering Service in Less Than 7 Days!
+
                                 </i>
                             "
                         />
@@ -192,13 +183,11 @@ function Services() {
                             altText="services"
                             category="Email Support"
                             title="Timely Responses, Exceptional Service"
-                            description="Our email support team delivers quick, clear, and helpful responses to customer inquiries. We handle everything from simple questions to complex issues, ensuring high customer satisfaction.
-                            <br/>
-                            Stay on top of your inbox with quick replies, personalized attention, and clear solutions using the best-in-class email support outsourcing service
-
-                            <br/><br/>
+                            description="Our email support team provides fast, clear, and effective responses to all customer inquiries. We manage everything from straightforward questions to intricate concerns, guaranteeing exceptional customer satisfaction. Keep your inbox organized with swift replies, personalized care, and comprehensive solutions through our top-tier email support outsourcing service.
+<br/><br/>
                                 <i>
-                               Launch Your Email Support Campaign right now.
+                              Initiate Your Email Support Campaign Today!
+
                                 </i>
 "
                         />

@@ -33,7 +33,7 @@ const InfoSection = ({
                         ))}
                     </h3>
                     <p className="text-[#172806] font-semibold">{description}</p>
-                    <div className='flex gap-5 items-center justify-start flex-wrap'>
+                    {/* <div className='flex gap-5 items-center justify-start flex-wrap'>
                         {
                             listPoints.map((point, index) => (
                                 <div className='flex items-center text-[#172806] gap-2 text-xl font-semibold leading-none'>
@@ -42,7 +42,7 @@ const InfoSection = ({
                                 </div>
                             ))
                         }
-                    </div>
+                    </div> */}
                     <div className="w-fit">
                         {/* <MyCustomButton text={buttonText} href={buttonHref} /> */}
                        <ReusableButton href={buttonHref} text={buttonText}/>
@@ -51,7 +51,7 @@ const InfoSection = ({
 
                 {/* Image section */}
                 <div className={`flex ${reverseLayout ? 'md:justify-start' : 'md:justify-end'} order-1`}>
-                    <Image src={imageSrc} alt={imageAlt} quality={100} className="rounded-xl lg:min-h-[550px] object-cover object-center" />
+                    <Image src={imageSrc} alt={imageAlt} quality={100} className="rounded-xl lg:min-h-[450px] object-cover object-center" />
                 </div>
             </div>
         </Container>

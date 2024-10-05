@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import logo from "../../../../public/asset/swif-cabs-logo.png"
+import logo from "../../../../public/asset/Chatter (1)-cropped.svg"
 import Image from 'next/image';
 const Footer = () => {
     return (
@@ -12,9 +12,9 @@ const Footer = () => {
                 >
                     <div className="relative text-white pt-20  md:pt-32">
                         <div className="container">
-                            <div className="nc-SectionSubscribe2 relative grid gap-10 text-white lg:grid-cols-4 lg:gap-0 ">
+                            <div className="nc-SectionSubscribe2 relative grid md:gap-10 text-white lg:grid-cols-4 lg:gap-0 ">
                                 <div className="col-span-1 space-y-5">
-                                    <a className="flex cursor-pointer items-center gap-1 font-medium" href="/">
+                                    <a className="flex cursor-pointer items-start gap-1 font-medium" href="/">
                                         <Image
                                             src={logo}
                                             alt="muntazim logo"
@@ -44,11 +44,11 @@ const Footer = () => {
                                         <div className="flex flex-col items-start justify-center gap-5">
                                             <div className="relative inline-block"><a className="underline-text" href="/">Home</a>
                                             </div>
-                                            <div className="relative inline-block"><a className="underline-text" href="/app">
-                                                App</a></div><div className="relative inline-block">
-                                                <a className="underline-text" href="/airport-fleet">Airport-fleet</a>
+                                            <div className="relative inline-block"><a className="underline-text" href="/services">
+                                                Services</a></div><div className="relative inline-block">
+                                                <a className="underline-text" href="/contact">Contact</a>
                                             </div><div className="relative inline-block">
-                                                <a className="underline-text" href="/about-us">About Us</a>
+                                                <a className="underline-text" href="/about">About Us</a>
                                             </div>
 
                                         </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                             <div className="mt-5 flex flex-col items-center justify-center border-t border-white/10 py-6 text-white 2xl:py-5">
                                 <div>
                                     <p className='text-center w-full'>© <span> All rights reserved by</span>
-                                        <span><a className="font-semibold pl-2" target="_blank" href="https://devspherelabs.com/">Swift Cabs.</a>
+                                        <span><a className="font-semibold pl-2" target="_blank" href="https://devspherelabs.com/">The Chatter Bridge</a>
                                         </span></p></div>
                             </div>
                         </div>

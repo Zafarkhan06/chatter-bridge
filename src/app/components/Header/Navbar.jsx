@@ -19,6 +19,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
+import chatterlogo from "../../../../public/asset/Chatter (1)-cropped.svg";
+import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
 // });
@@ -100,28 +102,26 @@ export default function Navbar() {
   );
 
   return (
-    <div className="bg-[#172806] py-4">
+    <div className="bg-[#172806]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#afe57f", backgroundColor: "#172806", boxShadow: "none" }}
+        sx={{ color: "#afe57f", backgroundColor: "#172806", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar
-            sx={{
-              justifyContent: "space-between",
-              alignContent: "center",
-              alignItems: "center",
-            }}
+           className="flex justify-between md:grid md:grid-cols-4 md:justify-center items-center"
           >
             {/* Logo on the left */}
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Logo
-            </Typography>
+            <div >
+              <Link href="/">
+                <Image src={chatterlogo} alt="Chatter" className="w-2/5 md:w-3/5 cursor-pointer" />
+              </Link>
+            </div>
 
             {/* Page links (for desktop only) */}
             {!isMobile && (
-              <Box
-                sx={{ flexGrow: 1, display: "flex", justifyContent: "start" }}
+              <Box className="col-span-2"
+                sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}
               >
                 <div className="flex justify-between gap-10">
                   {pages.map((page, index) => (
@@ -144,7 +144,9 @@ export default function Navbar() {
 
             {/* Contact Us button (desktop only) */}
             {!isMobile && (
+              <div className="flex justify-end">
               <button className="coolBeans w-44">Contact US</button>
+              </div>
             )}
 
             {/* Hamburger icon (mobile only) */}
@@ -154,7 +156,7 @@ export default function Navbar() {
                 onClick={toggleDrawer(true)}
                 color="inherit"
               >
-                <MenuIcon />
+                <MenuIcon sx={{fontSize: "40px"}}/>
               </IconButton>
             )}
           </Toolbar>
