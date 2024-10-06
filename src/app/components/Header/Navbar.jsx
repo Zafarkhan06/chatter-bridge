@@ -86,7 +86,7 @@ export default function Navbar() {
               style={{
                 color: clientPathname === page.path ? "white" : "#172806",
               }}
-              className="text-xl font-semibold hover:text-white"
+              className="text-xl font-medium hover:text-white"
             >
               {page.name}
             </Link>
@@ -133,7 +133,7 @@ export default function Navbar() {
                         color:
                           clientPathname === page.path ? "white" : "#afe57f",
                       }}
-                      className="text-xl font-semibold hover:text-white"
+                      className="text-xl font-normal hover:text-white"
                     >
                       {page.name}
                     </Link>

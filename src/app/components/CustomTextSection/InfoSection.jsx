@@ -24,7 +24,7 @@ const InfoSection = ({
                         }`}
                 >
                     <h5 className="leading-none text-[#172806] tracking-tight">{title}</h5>
-                    <h3 className="font-black uppercase leading-none tracking-tight text-[#172806]">
+                    <h3 className="font-black uppercase leading-none tracking-normal text-[#172806]">
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}

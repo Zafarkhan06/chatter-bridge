@@ -21,6 +21,7 @@ import TeamBuilding from "../../public/asset/team-building (1).png";
 import Scalable from "../../public/asset/scalable-business.png";
 import carSmoke from "../../public/asset/car-smokey.gif";
 import CancelIcon from '@mui/icons-material/Cancel';
+import EmblaCarouselSlider from "./components/Reusable-Slider/ReusableSlider";
 
 export default function Home() {
   const OPTIONS = { dragFree: false, loop: true }
@@ -35,7 +36,7 @@ export default function Home() {
       "imageSrc": costEffiecentImage,
       "imageAlt": "Cost Efficient Image",
       "reverseLayout": false,
-     // 'listPoints': ['Custom Talent Acquisition', 'Cost-Effective Solutions'] // List for this section
+      // 'listPoints': ['Custom Talent Acquisition', 'Cost-Effective Solutions'] // List for this section
 
     },
     {
@@ -47,7 +48,7 @@ export default function Home() {
       "imageSrc": ServicesImage2,
       "imageAlt": "Cost Efficient Image",
       "reverseLayout": true,
-     // 'listPoints': ['Tailored talent aligned with your business needs', 'Skilled teams that deliver measurable impact'] // List for this section
+      // 'listPoints': ['Tailored talent aligned with your business needs', 'Skilled teams that deliver measurable impact'] // List for this section
     }
   ]
 
@@ -94,16 +95,16 @@ export default function Home() {
           <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[600px] -top-[320px]" />
         </div>
         <div className="mb-20 md:mb-32">
-          <h3 className="font-black uppercase tracking-tight text-[#afe57f] leading-none">
+          <h3 className="font-black uppercase tracking-normal text-[#afe57f] leading-none">
             Efficient Taxi Dispatching Services
           </h3>
-          <h6 className=" tracking-tight text-white mt-3">
+          <h6 className=" tracking-normal text-white mt-3">
             24/7 Dispatching to Keep Your Fleet Moving
           </h6>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 items-start gap-8">
             <div className="flex">
               <div className="bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-12">
-                <h4 className="font-black uppercase flex items-center gap-4 tracking-tight leading-none text-[#172806]">
+                <h4 className="font-black uppercase flex items-center gap-4 tracking-normal leading-none text-[#172806]">
                   <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
                 </h4>
                 <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
@@ -117,7 +118,7 @@ export default function Home() {
             </div>
             <div className="flex">
               <div className="bg-[#edefec] rounded-xl flex-grow shadow-inner p-8 py-12">
-                <h4 className="font-black uppercase tracking-tight leading-none flex items-center gap-4 text-[#172806]">
+                <h4 className="font-black uppercase tracking-normal leading-none flex items-center gap-4 text-[#172806]">
                   <svg
                     width="57"
                     height="57"
@@ -150,9 +151,11 @@ export default function Home() {
       <div className=" bg-[#edefec]">
         <Container maxWidth="xl">
           <div className="py-16 md:py-32 ">
-            <h3 className="font-black hidden md:block leading-none uppercase text-[#172806] text-center">Trusted by 20+ Businesses for Our Tailored Solutions</h3>
-            <h5 className="font-black md:hidden leading-none uppercase text-[#172806] text-center">Trusted by 20+ Businesses for Our Tailored Solutions</h5>
-            <div className="grid grid-cols-2 md:grid-cols-3 mt-16 md:mt-24">
+            <h3 className="font-black leading-none uppercase text-[#172806] text-center">Domain <span className="text-[#87c155]">expertise</span></h3>
+            <h6 className="font-normal leading-none mt-6 text-[#172806] text-center mb-16">Trusted by 20+ Businesses for Our Customized Solutions</h6>
+
+            <EmblaCarouselSlider />
+            {/* <div className="grid grid-cols-2 md:grid-cols-3 mt-16 md:mt-24">
               <div className="flex flex-col justify-start items-center gap-3 border-b-2 border-[#172806] p-8 border-r-2">
                 <CountingNumberComponent endNumber={37} text="Successful Projects" />
                 <p className="text-[#616E82] text-center text-sm md:text-xl font-medium" >Customer Satisfaction Score Boost
@@ -186,7 +189,7 @@ export default function Home() {
                 </p>
               </div>
 
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>
@@ -220,7 +223,7 @@ export default function Home() {
       </div>
       <div className='bg-white py-16 md:py-24'>
         <Container maxWidth="xl">
-          <h2 className='font-black uppercase tracking-tighter text-[#172806]'>What's In It For You?
+          <h2 className='font-black uppercase tracking-normaler text-[#172806]'>What's In It For You?
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
             <ServiceCard

@@ -8,7 +8,7 @@ const ServiceCard = ({ imageSrc, altText, category, title, description }) => {
       <div className='w-fit'>
         <p className='bg-[#3d3f3b] text-lg text-white px-5 py-2 uppercase font-bold'>{category}</p>
       </div>
-      <h5 className='tracking-tighter -mt-3 leading-none uppercase font-black text-[#3d3f3b]'>
+      <h5 className='tracking-tight -mt-3 leading-none uppercase font-black text-[#3d3f3b]'>
         {title}
       </h5>
       <p className='text-[#172806] font-semibold md:leading-tight -mt-3 md:w-5/6 tracking-normal' dangerouslySetInnerHTML={{ __html: description }} />
