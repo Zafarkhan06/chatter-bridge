@@ -18,7 +18,7 @@ import emailSupport from "../../public/asset/palnt-plastic (3).png";
 import Link from "next/link";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import TeamBuilding from "../../public/asset/team-building (1).png";
-import Scalable from "../../public/asset/scalabale-business.jpg";
+import Scalable from "../../public/asset/scalable-business.png";
 import carSmoke from "../../public/asset/car-smokey.gif";
 import CancelIcon from '@mui/icons-material/Cancel';
 
