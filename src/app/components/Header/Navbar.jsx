@@ -60,7 +60,7 @@ export default function Navbar() {
         justifyContent: "flex-start",
         pt: 3,
         px: 3,
-        backgroundColor: "#afe57f",
+        backgroundColor: "#192128",
       }}
       role="presentation"
     >
@@ -70,7 +70,7 @@ export default function Navbar() {
         onClick={toggleDrawer(false)}
         sx={{ alignSelf: "flex-end" }}
       >
-        <CloseIcon />
+        <CloseIcon sx={{color: "#E7E5E4"}} />
       </IconButton>
 
       {/* Pages list */}
@@ -84,9 +84,9 @@ export default function Navbar() {
               onClick={toggleDrawer(false)}
               href={page.path} // Use the path from the object
               style={{
-                color: clientPathname === page.path ? "white" : "#192128",
+                color: clientPathname === page.path ? "#66cc8a" : "#E7E5E4",
               }}
-              className="text-xl font-medium hover:text-white"
+              className="text-xl font-medium hover:text-[#E7E5E4]"
             >
               {page.name}
             </Link>
@@ -105,7 +105,7 @@ export default function Navbar() {
     <div className="bg-[#192128]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#afe57f", backgroundColor: "#192128", boxShadow: "none", py: 1 }}
+        sx={{ color: "#66cc8a", backgroundColor: "#192128", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar
@@ -131,7 +131,7 @@ export default function Navbar() {
                       style={{
                         margin: "0 8px",
                         color:
-                          clientPathname === page.path ? "white" : "#afe57f",
+                          clientPathname === page.path ? "#66cc8a" : "#E7E5E4",
                       }}
                       className="text-xl font-normal hover:text-white"
                     >
@@ -156,7 +156,7 @@ export default function Navbar() {
                 onClick={toggleDrawer(true)}
                 color="inherit"
               >
-                <MenuIcon sx={{fontSize: "40px"}}/>
+                <MenuIcon sx={{fontSize: "40px", color: "#E7E5E4"}}/>
               </IconButton>
             )}
           </Toolbar>

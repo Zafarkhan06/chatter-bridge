@@ -10,9 +10,9 @@ const Footer = () => {
                     disableGutters={true}
                     maxWidth="xl"
                 >
-                    <div className="relative text-white pt-20  md:pt-32">
+                    <div className="relative text-[#E7E5E4] pt-20  md:pt-32">
                         <div className="container">
-                            <div className="nc-SectionSubscribe2 relative grid md:gap-10 text-white lg:grid-cols-4 lg:gap-0 ">
+                            <div className="nc-SectionSubscribe2 relative grid md:gap-10 text-[#E7E5E4] lg:grid-cols-4 lg:gap-0 ">
                                 <div className="col-span-1 space-y-5">
                                     <a className="flex cursor-pointer items-start gap-1 font-medium" href="/">
                                         <Image
@@ -21,7 +21,7 @@ const Footer = () => {
                                             className="w-full md:w-2/3 cursor-pointer"
                                         />
                                     </a>
-                                    <p className="font-light text-white">
+                                    <p className="font-light text-[#E7E5E4]">
                                         Swift Cabs offers 24/7 taxi services with modern vehicles and courteous drivers, ensuring timely, memorable journeys in Kettering and Wellingborough.                                        </p>
 
                                     <div className="flex items-center gap-3">
@@ -40,7 +40,7 @@ const Footer = () => {
                                 </div>
                                 <div className="flex md:flex-row flex-col justify-around items-start gap-10 lg:ml-20 col-span-2">
                                     <div className="space-y-5 w-full md:w-2/4 ">
-                                        <div className="text-xl text-white font-medium">Pages</div>
+                                        <div className="text-xl text-[#E7E5E4] font-medium">Pages</div>
                                         <div className="flex flex-col items-start justify-center gap-5">
                                             <div className="relative inline-block"><a className="underline-text" href="/">Home</a>
                                             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-5 flex flex-col items-center justify-center border-t border-white/10 py-6 text-white 2xl:py-5">
+                            <div className="mt-5 flex flex-col items-center justify-center border-t border-white/10 py-6 text-[#E7E5E4] 2xl:py-5">
                                 <div>
                                     <p className='text-center w-full'>© <span> All rights reserved by</span>
                                         <span><a className="font-semibold pl-2" target="_blank" href="https://devspherelabs.com/">The Chatter Bridge</a>

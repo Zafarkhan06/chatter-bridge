@@ -201,8 +201,8 @@ export default function Home() {
       <section className="bg-[#E7E5E4]">
         <Container maxWidth="xl">
           <div className="text-center w-full">
-            <h4 className="font-black uppercase text-[#444c58] pt-16">Improve your flow with our services</h4>
-            <div className="grid grid-cols-1 md:grid-cols-10 gap-8 md:px-0 lg:px-24 mt-16 md:!grid-cols-12 md:!px-0 pb-32">
+            <h4 className="font-black uppercase text-[#444c58] pt-8 md:pt-16">Improve your flow with our services</h4>
+            <div className="grid grid-cols-1 md:grid-cols-10 gap-8 md:px-0 lg:px-24 mt-8 md:mt-16 md:!grid-cols-12 md:!px-0 pb-16 md:pb-32">
               <div className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Customer Support</p>
