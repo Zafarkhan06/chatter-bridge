@@ -21,7 +21,7 @@ function Services() {
             <Container maxWidth="xl">
                 <div className='flex flex-col py-24 md:flex-row md:py-36 gap-10 justify-between items-center'>
                     <div className='md:w-[55%] flex flex-col gap-5 md:gap-10 justify-between'>
-                        <h3 className='leading-none uppercase font-black text-[#afe57f]'>Maximize Efficiency, Elevate Your Support Solutions
+                        <h3 className='leading-none uppercase font-black text-[#E7E5E4]'>Maximize Efficiency, Elevate Your Support Solutions
                         </h3>
                         <p className='leading-tight text-2xl'> Empower your business with expert support exactly where it’s needed most.Outsource any business process with ease. <br />Get started today with a free trial!</p>
                         <button className='coolBeans w-44'>
@@ -40,25 +40,25 @@ function Services() {
                 </div>
 
             </Container>
-            <div className='mt-44 md:mt-[250px] bg-white py-28'>
+            <div className='mt-44 md:mt-[250px] bg-[#444c58] py-28'>
                 <Container maxWidth="xl" sx={{ position: "relative", }}>
                     <div className="flex justify-center">
                         <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[550px] -top-[330px]" />
                     </div>
                     <div className="">
-                        <h3 className="font-black uppercase tracking-tight text-[#172806] leading-none">
+                        <h3 className="font-black uppercase tracking-tight text-[#E7E5E4] leading-none">
                             Efficient Taxi Dispatching Services
                         </h3>
-                        <h6 className=" tracking-tight text-[#172806] mt-3">
+                        <h6 className=" tracking-tight text-[#E7E5E4] mt-3">
                             24/7 Dispatching to Keep Your Fleet Moving
                         </h6>
                         <div className="grid grid-cols-1 md:grid-cols-2 mt-16 items-start gap-8">
                             <div className="flex">
-                                <div className="bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-12">
-                                    <h4 className="font-black uppercase flex items-center gap-4 tracking-tight leading-none text-[#172806]">
+                                <div className="bg-[#192128] rounded-xl flex-grow shadow-inner p-8 py-12">
+                                    <h4 className="font-black uppercase flex items-center gap-4 tracking-tight leading-none text-[#E7E5E4]">
                                         <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
                                     </h4>
-                                    <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                                    <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#E7E5E4] mt-10">
                                         <li className="mt-3">Hiring and maintaining an onsite dispatch team with expensive salaries.</li>
                                         <li className="mt-3">Dispatchers available only during business hours, leading to downtime.</li>
                                         <li className="mt-3">No real-time tracking or updates.</li>
@@ -69,7 +69,7 @@ function Services() {
                             </div>
                             <div className="flex">
                                 <div className="bg-[#edefec] rounded-xl flex-grow shadow-inner p-8 py-12">
-                                    <h4 className="font-black uppercase tracking-tight leading-none flex items-center gap-4 text-[#172806]">
+                                    <h4 className="font-black uppercase tracking-tight leading-none flex items-center gap-4 text-[#444c58]">
                                         <svg
                                             width="57"
                                             height="57"
@@ -77,16 +77,16 @@ function Services() {
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
-                                            <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
+                                            <circle cx="28.5" cy="28.5" r="28.5" fill="#66cc8a" />
                                             <path
                                                 d="M13 27.9242L24.3363 39L45 19"
-                                                stroke="#172806"
+                                                stroke="#444c58"
                                                 stroke-width="7.73889"
                                             />
                                         </svg>
                                         Chatter Bridge Way
                                     </h4>
-                                    <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                                    <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#444c58] mt-10">
                                         <li className="mt-3">Remote, expert dispatchers at a fraction of the cost.                  </li>
                                         <li className="mt-3">Scalable solutions tailored to your fleet’s needs.                  </li>
                                         <li className="mt-3">Real-time tracking and communication for drivers and passengers.                  </li>
@@ -99,9 +99,9 @@ function Services() {
                     </div>
                 </Container>
             </div>
-            <div className='bg-[#edefec] py-16 md:py-24'>
+            <div className='bg-[#192128] py-16 md:py-24'>
                 <Container maxWidth="xl">
-                    <h4 className='font-black uppercase tracking-tighter text-[#3d3f3b]'>Tailored Solutions to Fuel Your Business Growth </h4>
+                    <h4 className='font-black uppercase tracking-tighter text-[#E7E5E4]'>Tailored Solutions to Fuel Your Business Growth </h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={customerSupport}
@@ -128,15 +128,14 @@ function Services() {
                     </div>
                 </Container>
             </div>
-            <div className='bg-[#afe57f] py-16 md:py-24'>
-
-                <h3 className='md:hidden block font-black uppercase tracking-tighter md:text-center text-[#3d3f3b]'>Streamlined Communication, Anytime</h3>
-
+            <div className='bg-[#444c58] py-16 md:py-24'>
                 <Container maxWidth="xl">
-                    <h3 className='hidden md:block font-black uppercase tracking-tighter md:text-start text-[#3d3f3b]'>Seamless Communication, Around the Clock</h3>
+                    <h3 className='hidden md:block font-black uppercase tracking-tighter md:text-start text-[#E7E5E4]'>Seamless Communication, Around the Clock</h3>
+                    <h4 className='md:hidden block font-black uppercase tracking-tighter md:text-center text-[#E7E5E4]'>Seamless Communication, Around the Clock</h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={chatsupport}
+                            isBlack={false}
                             altText="Chat Support"
                             category="Chat Support"
                             title="RAPID RESPONSE, REAL CONNECTION, INSTANT SOLUTIONS, HAPPY CUSTOMERS!"
@@ -148,6 +147,7 @@ function Services() {
                         <ServiceCard
                             imageSrc={virtualassistant}
                             altText="services"
+                            isBlack={false}
                             category="Virtual Assistant"
                             title="LIMITLESS PRODUCTIVITY"
                             description="Our virtual assistants expertly manage administrative tasks, scheduling, and more, freeing you to concentrate on what truly matters. We provide flexible and dependable support to enhance your daily operations. We pair you with virtual assistants whose expertise perfectly aligns with your unique business needs, ensuring maximum productivity. Simplify your business operations by quickly hiring top-notch VAs!<br/><br/>
@@ -159,11 +159,11 @@ function Services() {
                     </div>
                 </Container>
             </div>
-            <div className='bg-white py-16 md:py-24'>
-               
+            <div className='bg-[#192128] py-16 md:py-24'>
+
                 <Container maxWidth="xl">
-                <h4 className='font-black uppercase tracking-tighter  text-[#172806]'>Streamline Operations with Customized Assistance
-                </h4>
+                    <h4 className='font-black uppercase tracking-tighter  text-[#E7E5E4]'>Streamline Operations with Customized Assistance
+                    </h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 items-start'>
                         <ServiceCard
                             imageSrc={answeringServices}
@@ -194,11 +194,11 @@ function Services() {
                     </div>
                 </Container>
             </div>
-            <div className=" bg-[#afe57f] py-16">
-                <h3 className="font-black leading-none uppercase text-[#172806] text-center">
+            <div className=" bg-[#E7E5E4] py-16">
+                <h3 className="font-black leading-none uppercase text-[#444c58] text-center">
                     Ready to get started?
                 </h3>
-                <p className="text-[#172806] mt-6 font-semibold text-center">
+                <p className="text-[#444c58] mt-6 font-semibold text-center">
                     Discover how TheChatterBridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
                 </p>
                 <div className="w-full justify-center flex mt-6">

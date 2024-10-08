@@ -6,9 +6,9 @@ export default function Contact() {
   return (
     <>
       {/* Main Heading */}
-      <div className=" my-24">
+      <div className=" py-24">
         <Container maxWidth="xl">
-          <h1 className="font-black text-center uppercase text-[#afe57f]">
+          <h1 className="font-black text-center uppercase text-[#E7E5E4]">
             Contact US
           </h1>
           <h6 className="text-white text-center">
@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="flex gap-5 md:gap-20 flex-col md:flex-row items-stretch  justify-between ">
             <div className="flex flex-col md:w-[45%] ">
               {/* Green Card */}
-              <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#afe57f] ">
+              <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#66cc8a] ">
 
                 <div className="flex flex-col justify-center items-start gap-4">
                   <div className="flex items-center gap-3">
@@ -32,12 +32,12 @@ export default function Contact() {
                       width={50}
                       className=""
                     />
-                    <h6 className="text-[#172806] font-bold tracking-tighter leading-tight">
+                    <h6 className="text-[#192128] font-bold tracking-tighter leading-tight">
                       Let’s Connect and Grow Together
                     </h6>
                   </div>
 
-                  <p className="text-[#172806]">
+                  <p className="text-[#192128]">
                     Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
                   </p>
                   <ReusableButton text={"Check our services"} href={"/"} />
@@ -46,21 +46,21 @@ export default function Contact() {
               </div>
 
               {/* Second Card */}
-              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#afe57f]   ">
+              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#66cc8a]   ">
                 <Container>
                   <div className="flex flex-col items-start justify-center gap-4">
-                    <h6 className="font-bold text-[#172806] leading-none">
+                    <h6 className="font-bold text-[#192128] leading-none">
                       Contact Us Directly
                     </h6>
-                    <p className=" text-[#172806]">
+                    <p className=" text-[#192128]">
                       Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
                     </p>
                     <div className="flex gap-6 md:flex-row flex-col">
-                      <p className=" text-[#172806]">
+                      <p className=" text-[#192128]">
                         Send us an email to: <br />
                         <span className="font-bold">hello@firmfox.com</span>
                       </p>
-                      <p className=" text-[#172806]">
+                      <p className=" text-[#192128]">
                         Alternatively, you can call:<br />
                         <span className="font-bold">+971 55 975 8358</span>
                       </p>
@@ -71,15 +71,15 @@ export default function Contact() {
             </div>
             <div className="md:w-[55%]">
               {/* Form Section  */}
-              <div className="bg-[#edefec] rounded-3xl py-8 px-4 mt-10 ">
+              <div className="bg-[#E7E5E4] rounded-3xl py-8 px-4 mt-10 ">
                 <Container>
                   <form action="">
-                    <h5 className="text-[#172806] font-bold pb-6">
+                    <h5 className="text-[#192128] font-bold pb-6">
                       Send us a message
                     </h5>
                     <div className="">
                       <label htmlFor="fullName">
-                        <p className="text-[#172806] font-bold pb-2 text-2xl">
+                        <p className="text-[#192128] font-bold pb-2 text-2xl">
                           Full Name
                         </p>
 
@@ -90,7 +90,7 @@ export default function Contact() {
                         />
                       </label>
                       <label htmlFor="email">
-                        <p className="text-[#172806] font-bold pb-2 pt-6 text-2xl">
+                        <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">
                           Email
                         </p>
 
@@ -101,7 +101,7 @@ export default function Contact() {
                         />
                       </label>
                       <label htmlFor="textarea">
-                        <p className="text-[#172806] font-bold pb-2 pt-6 text-2xl">
+                        <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">
                           Message
                         </p>
 
@@ -134,7 +134,7 @@ export default function Contact() {
               className="block lg:hidden"
             />
             <div className="lg:flex-1 lg:flex lg:flex-col lg:items-start lg:gap-10">
-              <h2 className="font-bold text-[#172806] text-center leading-tight tracking-tighter mt-10 lg:text-start lg:leading-none lg:text-5xl">
+              <h2 className="font-bold text-[#192128] text-center leading-tight tracking-tighter mt-10 lg:text-start lg:leading-none lg:text-5xl">
                 Launch and Grow Your Business in the UAE
               </h2>
               <p className="text-[#172806] text-center lg:text-start">
