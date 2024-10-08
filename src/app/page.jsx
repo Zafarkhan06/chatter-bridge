@@ -86,7 +86,7 @@ export default function Home() {
       <EmblaCarousel options={OPTIONS} />
 
 
-      <div className=" bg-[#afe57f] pb-52 md:pb-64 ">
+      <div className=" bg-[#333c4d] pb-52 md:pb-64 ">
         <InfoSection {...InforSectionData[0]} />
       </div>
 
@@ -95,19 +95,19 @@ export default function Home() {
           <Image src={carSmoke} alt="car smoke" height={700} className="absolute md:-top-[600px] -top-[320px]" />
         </div>
         <div className="mb-20 md:mb-32">
-          <h3 className="font-black uppercase tracking-normal text-[#afe57f] leading-none">
+          <h3 className="font-black uppercase tracking-normal text-[#E7E5E4]  leading-none">
             Efficient Taxi Dispatching Services
           </h3>
-          <h6 className=" tracking-normal text-white mt-3">
+          <h6 className=" tracking-normal text-[#E7E5E4] mt-3">
             24/7 Dispatching to Keep Your Fleet Moving
           </h6>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 items-start gap-8">
             <div className="flex">
-              <div className="bg-[#afe57f] rounded-xl flex-grow shadow-inner p-8 py-12">
-                <h4 className="font-black uppercase flex items-center gap-4 tracking-normal leading-none text-[#172806]">
+              <div className="bg-[#333c4d] rounded-xl flex-grow shadow-inner p-8 py-12">
+                <h4 className="font-black uppercase flex items-center gap-4 tracking-normal leading-none text-[#E7E5E4]">
                   <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
                 </h4>
-                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#E7E5E4] mt-10">
                   <li className="mt-3">Hiring and maintaining an onsite dispatch team with expensive salaries.</li>
                   <li className="mt-3">Dispatchers available only during business hours, leading to downtime.</li>
                   <li className="mt-3">No real-time tracking or updates.</li>
@@ -117,8 +117,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex">
-              <div className="bg-[#edefec] rounded-xl flex-grow shadow-inner p-8 py-12">
-                <h4 className="font-black uppercase tracking-normal leading-none flex items-center gap-4 text-[#172806]">
+              <div className="bg-[#E7E5E4] rounded-xl flex-grow shadow-inner p-8 py-12">
+                <h4 className="font-black uppercase tracking-normal leading-none flex items-center gap-4 text-[#444c58]">
                   <svg
                     width="57"
                     height="57"
@@ -129,13 +129,13 @@ export default function Home() {
                     <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
                     <path
                       d="M13 27.9242L24.3363 39L45 19"
-                      stroke="#172806"
+                      stroke="#444c58"
                       stroke-width="7.73889"
                     />
                   </svg>
                   Chatter Bridge Way
                 </h4>
-                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#172806] mt-10">
+                <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#444c58] mt-10">
                   <li className="mt-3">Remote, expert dispatchers at a fraction of the cost.                  </li>
                   <li className="mt-3">Scalable solutions tailored to your fleet’s needs.                  </li>
                   <li className="mt-3">Real-time tracking and communication for drivers and passengers.                  </li>
@@ -148,11 +148,11 @@ export default function Home() {
         </div>
       </Container>
 
-      <div className=" bg-[#edefec]">
+      <div className=" bg-[#E7E5E4]">
         <Container maxWidth="xl">
           <div className="py-16 md:py-32 ">
-            <h3 className="font-black leading-none uppercase text-[#172806] text-center">Domain <span className="text-[#87c155]">expertise</span></h3>
-            <h6 className="font-normal leading-none mt-6 text-[#172806] text-center mb-16">Trusted by 20+ Businesses for Our Customized Solutions</h6>
+            <h3 className="font-black leading-none uppercase text-[#444c58] text-center">Domain <span className="text-[#444c58]">expertise</span></h3>
+            <h6 className="font-normal leading-none mt-6 text-[#444c58] text-center mb-16">Trusted by 20+ Businesses for Our Customized Solutions</h6>
 
             <EmblaCarouselSlider />
             {/* <div className="grid grid-cols-2 md:grid-cols-3 mt-16 md:mt-24">

@@ -23,8 +23,8 @@ const InfoSection = ({
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'
                         }`}
                 >
-                    <h5 className="leading-none text-[#172806] tracking-tight">{title}</h5>
-                    <h3 className="font-black uppercase leading-none tracking-normal text-[#172806]">
+                    <h5 className="leading-none text-[#E7E5E4] tracking-tight">{title}</h5>
+                    <h3 className="font-black uppercase leading-none tracking-normal text-[#E7E5E4]">
                         {subtitle.split('<br/>').map((line, index) => (
                             <React.Fragment key={index}>
                                 {line}
@@ -32,7 +32,7 @@ const InfoSection = ({
                             </React.Fragment>
                         ))}
                     </h3>
-                    <p className="text-[#172806] font-semibold">{description}</p>
+                    <p className="text-[#E7E5E4] font-semibold">{description}</p>
                     {/* <div className='flex gap-5 items-center justify-start flex-wrap'>
                         {
                             listPoints.map((point, index) => (

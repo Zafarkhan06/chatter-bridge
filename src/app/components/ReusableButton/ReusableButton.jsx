@@ -7,8 +7,8 @@ const ReusableButton = ({ text, href }) => {
         <Link href={href}>
             <div className="coolBeanSecond flex gap-5 items-center group">
                 {text} 
-                <div className='p-2 rounded-full group-hover:bg-[#172806] bg-[#afe57f]'>
-                    <ArrowForwardIcon sx={{ fontSize: '30px' }} className='text-[#172806] group-hover:text-white' />
+                <div className='p-2 rounded-full group-hover:bg-[#172806] bg-[#E7E5E4]'>
+                    <ArrowForwardIcon sx={{ fontSize: '30px' }} className='text-[#172806] group-hover:text-[#E7E5E4]' />
                 </div>
             </div>
         </Link>

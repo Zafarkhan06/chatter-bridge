@@ -84,7 +84,7 @@ export default function Navbar() {
               onClick={toggleDrawer(false)}
               href={page.path} // Use the path from the object
               style={{
-                color: clientPathname === page.path ? "white" : "#172806",
+                color: clientPathname === page.path ? "white" : "#192128",
               }}
               className="text-xl font-medium hover:text-white"
             >
@@ -102,10 +102,10 @@ export default function Navbar() {
   );
 
   return (
-    <div className="bg-[#172806]">
+    <div className="bg-[#192128]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#afe57f", backgroundColor: "#172806", boxShadow: "none", py: 1 }}
+        sx={{ color: "#afe57f", backgroundColor: "#192128", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar

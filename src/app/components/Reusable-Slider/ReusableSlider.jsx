@@ -31,7 +31,7 @@ const EmblaCarouselSlider = (props) => {
             <div className={styles.embla__slide}  key={index}>
               <div className="flex flex-col justify-start items-center gap-3 ">
                 <CountingNumberComponent endNumber={slide.endNumber} text="Successful Projects" />
-                <p className="text-[#616E82] text-center text-sm md:text-xl font-medium">{slide.text}</p>
+                <p className="text-[#444c58] text-center text-sm md:text-xl font-medium">{slide.text}</p>
               </div>
             </div>
           ))}
