@@ -8,7 +8,7 @@ const ServiceCard = ({ imageSrc, altText, category, title, description, isBlack=
       <div className='w-fit'>
         <p className={` ${isBlack ? 'bg-[#444c58]': 'bg-[#192128]'} text-lg text-white px-5 py-2 uppercase font-bold`}>{category}</p>
       </div>
-      <h5 className='tracking-tight -mt-3 leading-none uppercase font-black text-[#66cc8a]'>
+      <h5 className='tracking-tight -mt-3 leading-none uppercase font-black text-white'>
         {title}
       </h5>
       <p className='text-[#E7E5E4] font-semibold md:leading-tight -mt-3 md:w-5/6 tracking-normal' dangerouslySetInnerHTML={{ __html: description }} />

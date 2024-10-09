@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="flex gap-5 md:gap-20 flex-col md:flex-row items-stretch  justify-between ">
             <div className="flex flex-col md:w-[45%] ">
               {/* Green Card */}
-              <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#66cc8a] ">
+              <div className="mt-10 mb-6  px-6 py-8  rounded-3xl bg-[#444c58] ">
 
                 <div className="flex flex-col justify-center items-start gap-4">
                   <div className="flex items-center gap-3">
@@ -32,12 +32,12 @@ export default function Contact() {
                       width={50}
                       className=""
                     />
-                    <h6 className="text-[#192128] font-bold tracking-tighter leading-tight">
+                    <h6 className="text-[#E7E5E4] font-bold tracking-tighter leading-tight">
                       Let’s Connect and Grow Together
                     </h6>
                   </div>
 
-                  <p className="text-[#192128]">
+                  <p className="text-[#E7E5E4]">
                     Have any questions or need tailored solutions? We’re here to help. Reach out to us via email or explore other ways to connect. Let’s work together to create value and take your business to new heights.
                   </p>
                   <ReusableButton text={"Check our services"} href={"/"} />
@@ -46,21 +46,21 @@ export default function Contact() {
               </div>
 
               {/* Second Card */}
-              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#66cc8a]   ">
+              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#444c58]   ">
                 <Container>
                   <div className="flex flex-col items-start justify-center gap-4">
-                    <h6 className="font-bold text-[#192128] leading-none">
+                    <h6 className="font-bold text-[#E7E5E4] leading-none">
                       Contact Us Directly
                     </h6>
-                    <p className=" text-[#192128]">
+                    <p className=" text-[#E7E5E4]">
                       Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
                     </p>
                     <div className="flex gap-6 md:flex-row flex-col">
-                      <p className=" text-[#192128]">
+                      <p className=" text-[#E7E5E4]">
                         Send us an email to: <br />
                         <span className="font-bold">hello@firmfox.com</span>
                       </p>
-                      <p className=" text-[#192128]">
+                      <p className=" text-[#E7E5E4]">
                         Alternatively, you can call:<br />
                         <span className="font-bold">+971 55 975 8358</span>
                       </p>

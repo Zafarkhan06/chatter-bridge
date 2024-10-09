@@ -19,7 +19,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
-import chatterlogo from "../../../../public/asset/Chatter (1)-cropped.svg";
+import chatterlogo from "../../../../public/asset/chatter-logo-2.svg";
 import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
@@ -84,7 +84,7 @@ export default function Navbar() {
               onClick={toggleDrawer(false)}
               href={page.path} // Use the path from the object
               style={{
-                color: clientPathname === page.path ? "#66cc8a" : "#E7E5E4",
+                color: clientPathname === page.path ? "#192128" : "#444c58",
               }}
               className="text-xl font-medium hover:text-[#E7E5E4]"
             >
@@ -102,10 +102,10 @@ export default function Navbar() {
   );
 
   return (
-    <div className="bg-[#192128]">
+    <div className="bg-[#E7E5E4]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#66cc8a", backgroundColor: "#192128", boxShadow: "none", py: 1 }}
+        sx={{ color: "#66cc8a", backgroundColor: "#E7E5E4", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar
@@ -131,7 +131,8 @@ export default function Navbar() {
                       style={{
                         margin: "0 8px",
                         color:
-                          clientPathname === page.path ? "#66cc8a" : "#E7E5E4",
+                          clientPathname === page.path ? "#192128" : "#444c58",
+                          fontWeight: clientPathname === page.path ? "600" : "400",
                       }}
                       className="text-xl font-normal hover:text-white"
                     >

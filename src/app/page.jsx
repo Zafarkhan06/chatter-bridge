@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex">
               <div className="bg-[#444c58] rounded-xl flex-grow shadow-inner p-8 py-12">
                 <h4 className="font-black uppercase flex items-center gap-4 tracking-normal leading-none text-[#E7E5E4]">
-                  <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
+                  <CancelIcon sx={{ fontSize: "57px", color: "#E7E5E4" }} />Ineffecient Way
                 </h4>
                 <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#E7E5E4] mt-10">
                   <li className="mt-3">Hiring and maintaining an onsite dispatch team with expensive salaries.</li>
@@ -126,10 +126,10 @@ export default function Home() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="28.5" cy="28.5" r="28.5" fill="#AFE57F" />
+                    <circle cx="28.5" cy="28.5" r="28.5" fill="#444c58" />
                     <path
                       d="M13 27.9242L24.3363 39L45 19"
-                      stroke="#444c58"
+                      stroke="#E7E5E4"
                       stroke-width="7.73889"
                     />
                   </svg>

@@ -62,7 +62,7 @@ const EmblaCarousel = (props) => {
                                         <h4 className="font-bold text-center leading-none text-[#E7E5E4]">
                                             {slide.subtitle}
                                         </h4>
-                                        <h1 className="font-black text-[#66cc8a] text-center leading-none mt-2">
+                                        <h1 className="font-black text-gray-300 text-center leading-none mt-2">
                                             {slide.title}
                                         </h1>
                                         <div className="w-fit mt-10">

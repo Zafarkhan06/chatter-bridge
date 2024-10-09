@@ -88,10 +88,10 @@ function AboutUS() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="28.5" cy="28.5" r="28.5" fill="#66cc8a" />
+                    <circle cx="28.5" cy="28.5" r="28.5" fill="#192128" />
                     <path
                       d="M13 27.9242L24.3363 39L45 19"
-                      stroke="#444c58"
+                      stroke="#E7E5E4"
                       stroke-width="7.73889"
                     />
                   </svg>
