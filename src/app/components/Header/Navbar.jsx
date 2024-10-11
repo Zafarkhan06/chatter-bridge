@@ -19,7 +19,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
-import chatterlogo from "../../../../public/asset/chatter-logo-2.svg";
+import chatterlogo from "../../../../public/asset/new-logo.png";
 import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
@@ -60,7 +60,7 @@ export default function Navbar() {
         justifyContent: "flex-start",
         pt: 3,
         px: 3,
-        backgroundColor: "#192128",
+        backgroundColor: "#E7E5E4",
       }}
       role="presentation"
     >
@@ -70,7 +70,7 @@ export default function Navbar() {
         onClick={toggleDrawer(false)}
         sx={{ alignSelf: "flex-end" }}
       >
-        <CloseIcon sx={{color: "#E7E5E4"}} />
+        <CloseIcon sx={{color: "#192128"}} />
       </IconButton>
 
       {/* Pages list */}
@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {/* Contact Us button at the bottom */}
       <div className="flex justify-center items-center py-2 mt-3">
-        <button className="coolBeans w-full">Contact US</button>
+      <button className="bg-[#444c58] hover:bg-[#192128] text-[#E7E5E4] py-3 rounded-lg text-xl font-semibold w-44">Contact US</button>
       </div>
     </Box>
   );
@@ -114,7 +114,7 @@ export default function Navbar() {
             {/* Logo on the left */}
             <div >
               <Link href="/">
-                <Image src={chatterlogo} alt="Chatter" className="w-2/5 md:w-3/5 cursor-pointer" />
+                <Image src={chatterlogo} alt="Chatter" className="w-4/5 md:w-3/5 cursor-pointer" />
               </Link>
             </div>
 
@@ -131,10 +131,10 @@ export default function Navbar() {
                       style={{
                         margin: "0 8px",
                         color:
-                          clientPathname === page.path ? "#192128" : "#444c58",
+                          clientPathname === page.path ? "black" : "#192128",
                           fontWeight: clientPathname === page.path ? "600" : "400",
                       }}
-                      className="text-xl font-normal hover:text-white"
+                      className="text-xl font-normal hover:text-black hover:font-bold"
                     >
                       {page.name}
                     </Link>
@@ -146,7 +146,7 @@ export default function Navbar() {
             {/* Contact Us button (desktop only) */}
             {!isMobile && (
               <div className="flex justify-end">
-              <button className="coolBeans w-44">Contact US</button>
+              <button className="bg-[#444c58] hover:bg-[#192128] text-[#E7E5E4] py-3 rounded-lg text-xl font-semibold w-44">Contact US</button>
               </div>
             )}
 
@@ -157,7 +157,7 @@ export default function Navbar() {
                 onClick={toggleDrawer(true)}
                 color="inherit"
               >
-                <MenuIcon sx={{fontSize: "40px", color: "#E7E5E4"}}/>
+                <MenuIcon sx={{fontSize: "40px", color: "#192128"}}/>
               </IconButton>
             )}
           </Toolbar>

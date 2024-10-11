@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import logo from "../../../../public/asset/Chatter (1)-cropped.svg"
+import logo from "../../../../public/asset/new-logo.png"
 import Image from 'next/image';
 const Footer = () => {
     return (
@@ -14,16 +14,19 @@ const Footer = () => {
                         <div className="container">
                             <div className="nc-SectionSubscribe2 relative grid md:gap-10 text-[#E7E5E4] lg:grid-cols-4 lg:gap-0 ">
                                 <div className="col-span-1 space-y-5">
-                                    <a className="flex cursor-pointer items-start gap-1 font-medium" href="/">
-                                        <Image
-                                            src={logo}
-                                            alt="muntazim logo"
-                                            className="w-full md:w-2/3 cursor-pointer"
-                                        />
-                                    </a>
-                                    <p className="font-light text-[#E7E5E4]">
-                                        Swift Cabs offers 24/7 taxi services with modern vehicles and courteous drivers, ensuring timely, memorable journeys in Kettering and Wellingborough.                                        </p>
+                                    <div className='bg-[#E7E5E4] p-4 rounded-xl'>
+                                        <a className="flex cursor-pointer items-start gap-1 font-medium" href="/">
+                                            <Image
+                                                src={logo}
+                                                alt="muntazim logo"
+                                                className="w-full md:w-2/3 cursor-pointer"
+                                            />
+                                        </a>
+                                        <p className="font-light text-[#192128]">
+                                            TheChatterBridge offers offshore staffing solutions that seamlessly integrate with your business, enhancing sales, customer support, and operational efficiency to drive real results and lasting growth.                </p>
 
+
+                                    </div>
                                     <div className="flex items-center gap-3">
                                         <button type="button" className="ttnc-ButtonCircle flex items-center justify-center rounded-full !leading-none focus:ring-transparent disabled:bg-opacity-70 bg-custom-dark-gray w-10 h-10 ">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" className="text-lg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>
@@ -57,9 +60,9 @@ const Footer = () => {
                                         <div className="text-xl font-medium">Contact Us</div>
                                         <div className="flex flex-col items-start justify-center gap-5">
                                             <div className="relative flex flex-col ">
-                                             <a className="underline-text" href="tel:01933 277171">  Wellingborough Tel: 01933 277171</a> 
-                                            <a className="underline-text" href="tel:01933 213131">Rushden Tel: 01933 213131</a>
-                                            <a className="underline-text" href="tel:01536 420000">Kettering Tel: 01536 420000</a>
+                                                <a className="underline-text" href="tel:01933 277171">  Wellingborough Tel: 01933 277171</a>
+                                                <a className="underline-text" href="tel:01933 213131">Rushden Tel: 01933 213131</a>
+                                                <a className="underline-text" href="tel:01536 420000">Kettering Tel: 01536 420000</a>
                                             </div>
                                             <div className="relative inline-block">
                                                 <a className="underline-text" href="mailto:info.swiftcabs@gmail.com">
@@ -72,7 +75,7 @@ const Footer = () => {
                                             </div>
                                             <div className="relative inline-block">
                                                 <a className="underline-text">
-                                                Wellingborough office: 1A Alma Street Wellingborough</a>
+                                                    Wellingborough office: 1A Alma Street Wellingborough</a>
                                             </div>
                                         </div>
                                     </div>
@@ -80,10 +83,12 @@ const Footer = () => {
                                 </div>
                                 <div className="col-span-1 md:ml-6">
                                     <h2 className="text-xl font-medium">
-                                        Experience the Swift Cabs Difference</h2>
+
+                                        The ChatterBridge: Your Partner in Growth</h2>
 
                                     <div className="relative mt-5 max-w-sm">
-                                        <p>Enjoy reliable, efficient, and friendly taxi services with the latest technology at your fingertips. Book your ride today!</p>
+                                        <p>Empowering businesses with high-performing offshore teams that integrate effortlessly into your operations.
+                                        Boost sales, streamline support, and enhance efficiency with solutions designed to deliver real results from day one.</p>
                                     </div>
                                 </div>
                             </div>

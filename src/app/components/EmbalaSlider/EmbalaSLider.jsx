@@ -21,9 +21,9 @@ const slideContent = [
     },
     {
         image: testImage2,
-        title: 'Ideal Workforce',
-        subtitle: 'Ideal Growth  =',
-        description: 'At The Chatter Bridge,  We work with industry specific individuals that align with your business’s culture, industry, and growth goals',
+        title: 'Workforce Harmony',
+        subtitle: 'Ideal Growth  = Ideal Workforce',
+        description: 'At The Chatter Bridge,  we work with industry specific individuals that align with your business’s culture, industry, and growth goals',
         button: 'Find Your Perfect Fit',
         href: '/contact'
 

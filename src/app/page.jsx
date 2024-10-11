@@ -17,7 +17,7 @@ import answeringServices from "../../public/asset/answering-services (1).png";
 import emailSupport from "../../public/asset/palnt-plastic (3).png";
 import Link from "next/link";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
-import TeamBuilding from "../../public/asset/team-building (1).png";
+import TeamBuilding from "../../public/asset/custom-solution.jpg";
 import Scalable from "../../public/asset/scalable-business.png";
 import carSmoke from "../../public/asset/car-smokey.gif";
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -42,7 +42,7 @@ export default function Home() {
     {
       "title": "Goal-oriented Solutions for Your Business",
       "subtitle": "Business Expansion <br/>that saves costs",
-      "description": "Our offshore professionals are industry specific knowledge to bring specialized skills and industry knowledge to your businesses. Trained to meet your exact requirements, they seamlessly integrate into your operations, ensuring consistent performance and real results.",
+      "description": "Our offshore professionals bring specialized industry expertise to your business, equipped with the skills and knowledge needed to meet your precise requirements. They seamlessly integrate into your operations, ensuring consistent performance and delivering tangible results.",
       "buttonText": "Request a proposal",
       "buttonHref": "/contact",
       "imageSrc": ServicesImage2,
@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex">
               <div className="bg-[#444c58] rounded-xl flex-grow shadow-inner p-8 py-12">
                 <h4 className="font-black uppercase flex items-center gap-4 tracking-normal leading-none text-[#E7E5E4]">
-                  <CancelIcon sx={{ fontSize: "57px", color: "#E7E5E4" }} />Ineffecient Way
+                <CancelIcon sx={{ fontSize: "57px", color: "red" }} />Ineffecient Way
                 </h4>
                 <ul className="list-disc font-semibold text-lg md:text-2xl md:ml-10 list-outside text-[#E7E5E4] mt-10">
                   <li className="mt-3">Hiring and maintaining an onsite dispatch team with expensive salaries.</li>
@@ -126,10 +126,10 @@ export default function Home() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="28.5" cy="28.5" r="28.5" fill="#444c58" />
+                    <circle cx="28.5" cy="28.5" r="28.5" fill="#66cc8a" />
                     <path
                       d="M13 27.9242L24.3363 39L45 19"
-                      stroke="#E7E5E4"
+                      stroke="#444c58"
                       stroke-width="7.73889"
                     />
                   </svg>
@@ -203,7 +203,7 @@ export default function Home() {
           <div className="text-center w-full">
             <h4 className="font-black uppercase text-[#444c58] pt-8 md:pt-16">Improve your flow with our services</h4>
             <div className="grid grid-cols-1 md:grid-cols-10 gap-8 md:px-0 lg:px-24 mt-8 md:mt-16 md:!grid-cols-12 md:!px-0 pb-16 md:pb-32">
-              <div className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div className="col-span-4 hover:scale-105 hover:transition-transform	hover:ease-in-out grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Customer Support</p>
                   <p className="text-sm text-gray-600">Make Every Customer Feel Valued                  </p>
@@ -220,7 +220,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-colour="pink" className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div data-colour="pink" className="hover:scale-105 hover:transition-transform	hover:ease-in-out col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Telemarketing</p>
                   <p className="text-sm text-gray-600 capitalize">more outreach, more sales!</p>
@@ -234,7 +234,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-colour="pink" className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div data-colour="pink" className="hover:scale-105 hover:transition-transform	hover:ease-in-out col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Chat Support
                   </p>
@@ -249,7 +249,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-colour="pink" className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div data-colour="pink" className=" hover:scale-105 hover:transition-transform	hover:ease-in-out col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Virtual Assistant</p>
                   <p className="text-sm text-gray-600">Limitless Productivity</p>
@@ -267,7 +267,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-colour="pink" className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div data-colour="pink" className=" hover:scale-105 hover:transition-transform	hover:ease-in-out col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Answering Services</p>
                   <p className="text-sm text-gray-600">Never Miss A Call Again</p>
@@ -284,7 +284,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-colour="pink" className="col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+              <div data-colour="pink" className=" hover:scale-105 hover:transition-transform	hover:ease-in-out col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                 <div className="col-span-3">
                   <p className="text-h5 font-semibold mb-4 text-[#444c58]">Email Support</p>
                   <p className="text-sm text-gray-600">Timely Responses, Exceptional Service</p>
@@ -321,7 +321,7 @@ export default function Home() {
               description="Every business relies on solid administrative support, but generic solutions won’t cut it. The Chatter Bridge delivers personalized admin and support services tailored to fit your unique operational demands"
             />
             <ServiceCard
-            isBlack={false}
+              isBlack={false}
               imageSrc={Scalable}
               altText="services"
               category="Scalability"
