@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import services1 from '../../../public/asset/services-1.jpg';
+import services1 from '../../../public/asset/consult-2.jpg';
 import services2 from '../../../public/asset/services-2.jpg';
 import services3 from '../../../public/asset/services-3.jpg';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
@@ -20,22 +20,16 @@ function Services() {
         <>
             <Container maxWidth="xl">
                 <div className='flex flex-col py-24 md:flex-row md:py-36 gap-10 justify-between items-center'>
-                    <div className='md:w-[55%] flex flex-col gap-5 md:gap-10 justify-between'>
-                        <h3 className='leading-none uppercase font-black text-[#E7E5E4]'>Maximize Efficiency, Elevate Your Support Solutions
+                    <div className='md:w-[55%] flex flex-col gap-5 md:gap-8 justify-between'>
+                        <h3 className='leading-none uppercase font-black text-[#E7E5E4] text-balance'>Maximize Efficiency, Elevate Your Support Solutions
                         </h3>
                         <p className='leading-tight text-2xl'> Empower your business with expert support exactly where it’s needed most.Outsource any business process with ease. <br />Get started today with a free trial!</p>
                         <button className='coolBeans w-44'>
                             Contact US
                         </button>
                     </div>
-                    <div className='md:w-1/2 grid grid-cols-2 gap-10'>
-                        <div>
-                            <Image src={services1} alt='services' height={900} />
-                        </div>
-                        <div className='flex flex-col justify-between'>
-                            <Image src={services2} alt='services' height={900} />
-                            <Image src={services3} alt='services' height={900} />
-                        </div>
+                    <div className='md:w-[45%]'>
+                        <Image src={services1} alt='services' className='w-full h-full rounded-lg' />
                     </div>
                 </div>
 
