@@ -123,9 +123,9 @@
   
   .embla__slide__textOverlay {
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 50%;
-    transform: translate(-47%, 50%);
+    transform: translate(-47%, 75%);
     min-width: 100%;
     z-index: 2; /* Ensure the text is above the overlay */
     display: flex;

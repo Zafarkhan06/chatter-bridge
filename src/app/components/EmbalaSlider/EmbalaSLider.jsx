@@ -8,6 +8,7 @@ import styles from './EmbalaSlider.module.css'; // Custom CSS for styling
 import testImage1 from "../../../../public/asset/handpicked-talent.png";
 import testImage3 from "../../../../public/asset/streamline-services.png";
 import testImage2 from "../../../../public/asset/ideal-workspace.jpeg";
+import AnimatedWrapper from '../AnimatedFramerMotion/LeftInViewAnimation';
 
 // Slide content configuration with HTML in descriptions
 const slideContent = [
@@ -57,20 +58,28 @@ const EmblaCarousel = (props) => {
                                     quality={100}
                                     priority={true}
                                 />
-                                <Container maxWidth="xl" sx={{position: "relative", display: "flex", justifyContent: "center", alignItems: "center"}} disableGutters>
+                                <Container maxWidth="xl" sx={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center" }} disableGutters>
                                     <div className={styles.embla__slide__textOverlay}>
-                                        <h4 className="font-bold text-center leading-none text-[#E7E5E4]">
-                                            {slide.subtitle}
-                                        </h4>
-                                        <h1 className="font-black text-gray-300 text-center leading-none mt-2">
-                                            {slide.title}
-                                        </h1>
-                                        <div className="w-fit mt-10">
-                                            <Link href={slide.href}>
-                                                <button className='coolBeans w-full'>{slide.button}</button>
-                                            </Link>
-                                        </div>
-                                        <p className="font-medium text-center mt-16" dangerouslySetInnerHTML={{ __html: slide.description }} />
+                                        <AnimatedWrapper from="left" delay={0.5} duration={1}>
+                                            <h4 className="font-bold text-center leading-none text-[#E7E5E4]">
+                                                {slide.subtitle}
+                                            </h4>
+                                        </AnimatedWrapper>
+                                        <AnimatedWrapper from="right" delay={0.5} initialY="90" duration={1.5}>
+                                            <h1 className="font-black text-gray-300 text-center leading-none mt-2">
+                                                {slide.title}
+                                            </h1>
+                                        </AnimatedWrapper>
+                                        <AnimatedWrapper from="bottom" delay={0.5} duration={1.1}>
+                                            <div className="w-fit mt-10">
+                                                <Link href={slide.href}>
+                                                    <button className='coolBeans w-full'>{slide.button}</button>
+                                                </Link>
+                                            </div>
+                                        </AnimatedWrapper>
+                                        <AnimatedWrapper from="top" delay={1.5} duration={1}>
+                                            <p className="font-medium text-center mt-16" dangerouslySetInnerHTML={{ __html: slide.description }} />
+                                        </AnimatedWrapper>
                                     </div>
                                 </Container>
                             </div>

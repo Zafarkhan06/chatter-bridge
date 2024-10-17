@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Container, } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ReusableButton from '../ReusableButton/ReusableButton';
+import AnimatedWrapper from '../AnimatedFramerMotion/LeftInViewAnimation';
 
 const InfoSection = ({
     title,
@@ -23,35 +24,34 @@ const InfoSection = ({
                     className={`grid grid-flow-row justify-between gap-5 ${reverseLayout ? 'md:order-2' : 'md:order-1'
                         }`}
                 >
-                    <h5 className="leading-none text-[#E7E5E4] tracking-tight">{title}</h5>
-                    <h3 className="font-black uppercase leading-none tracking-normal text-[#E7E5E4]">
-                        {subtitle.split('<br/>').map((line, index) => (
-                            <React.Fragment key={index}>
-                                {line}
-                                <br className='hidden lg:block'/>
-                            </React.Fragment>
-                        ))}
-                    </h3>
-                    <p className="text-[#E7E5E4] font-semibold">{description}</p>
-                    {/* <div className='flex gap-5 items-center justify-start flex-wrap'>
-                        {
-                            listPoints.map((point, index) => (
-                                <div className='flex items-center text-[#172806] gap-2 text-xl font-semibold leading-none'>
-                                    <CheckCircleIcon className='text-[#172806]' />
-                                    {point}
-                                </div>
-                            ))
-                        }
-                    </div> */}
-                    <div className="w-fit">
-                        {/* <MyCustomButton text={buttonText} href={buttonHref} /> */}
-                       <ReusableButton href={buttonHref} text={buttonText}/>
-                    </div>
+                    <AnimatedWrapper from={'top'} delay={0} duration={1}>
+                        <h5 className="leading-none text-[#E7E5E4] tracking-tight">{title}</h5>
+                    </AnimatedWrapper>
+                    <AnimatedWrapper from={reverseLayout ? 'right' : 'left'} delay={0.3} duration={1}>
+                        <h3 className="font-black uppercase leading-none tracking-normal text-[#E7E5E4]">
+                            {subtitle.split('<br/>').map((line, index) => (
+                                <React.Fragment key={index}>
+                                    {line}
+                                    <br className='hidden lg:block' />
+                                </React.Fragment>
+                            ))}
+                        </h3>
+                    </AnimatedWrapper>
+                    <AnimatedWrapper from={reverseLayout ? 'left' : 'right'} delay={0.4} duration={1}>
+                        <p className="text-[#E7E5E4] font-semibold">{description}</p>
+                    </AnimatedWrapper>
+                    <AnimatedWrapper from={'bottom'} delay={0} duration={1.2}>
+                        <div className="w-fit">
+                            <ReusableButton href={buttonHref} text={buttonText} />
+                        </div>
+                    </AnimatedWrapper>
                 </div>
 
                 {/* Image section */}
                 <div className={`flex ${reverseLayout ? 'md:justify-start' : 'md:justify-end'} order-1`}>
-                    <Image src={imageSrc} alt={imageAlt} quality={100} className="rounded-xl lg:min-h-[450px] object-cover object-center" />
+                    <AnimatedWrapper from={reverseLayout ? 'left' : 'right'} delay={0} duration={1.1}>
+                        <Image src={imageSrc} alt={imageAlt} quality={100} className="rounded-xl lg:min-h-[450px] object-cover object-center" />
+                    </AnimatedWrapper>
                 </div>
             </div>
         </Container>
