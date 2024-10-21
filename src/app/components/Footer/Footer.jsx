@@ -10,7 +10,7 @@ const Footer = () => {
                     disableGutters={true}
                     maxWidth="xl"
                 >
-                    {/* <div className='bg-[#E7E5E4] pt-10 rounded-xl py-10'>
+                    <div className='bg-[#E7E5E4] pt-10 rounded-xl py-10'>
                         <a className="flex cursor-pointer items-center justify-center gap-1 font-medium" href="/">
                             <Image
                                 src={logo}
@@ -25,7 +25,7 @@ const Footer = () => {
                             <button className="bg-[#444c58] hover:bg-[#192128] text-[#E7E5E4] py-3 rounded-lg text-xl font-semibold w-44">Contact US</button>
                         </div>
 
-                    </div> */}
+                    </div>
                     <div className="relative text-[#E7E5E4] pt-10  ">
                         <div className="container">
                             <div className="relative grid text-[#E7E5E4] lg:grid-cols-4 lg:gap-0 ">
