@@ -7,7 +7,7 @@ import AnimatedWrapper from "../components/AnimatedFramerMotion/LeftInViewAnimat
 
 function AboutUS() {
   return (
-    <>
+    <div className="overflow-hidden">
       <div className=" bg-[#192128] py-24 md:py-36">
         <Container maxWidth="xl">
           <div>
@@ -216,7 +216,7 @@ function AboutUS() {
           </div>
         </AnimatedWrapper>
       </div>
-    </>
+    </div>
   );
 }
 

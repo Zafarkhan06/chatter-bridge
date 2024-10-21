@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
@@ -9,6 +9,8 @@ import testImage1 from "../../../../public/asset/handpicked-talent.png";
 import testImage3 from "../../../../public/asset/streamline-services.png";
 import testImage2 from "../../../../public/asset/ideal-workspace.jpeg";
 import AnimatedWrapper from '../AnimatedFramerMotion/LeftInViewAnimation';
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
+import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 
 // Slide content configuration with HTML in descriptions
 const slideContent = [
@@ -33,7 +35,7 @@ const slideContent = [
         image: testImage3,
         title: 'Ease the Pressure ',
         subtitle: 'Streamline Productivity,',
-        description: ' We create customised workflows and strategies that seamlessly align with your processes, driving efficiency and enhancing output',
+        description: 'At The Chatter Bridge, we bring together industry-specific professionals who complement your business’s culture, industry demands, and growth objectives, ensuring a seamless partnership',
         button: 'Get Your Dream Team',
         href: '/contact'
     }
@@ -41,7 +43,20 @@ const slideContent = [
 
 const EmblaCarousel = (props) => {
     const { options } = props;
-    const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+    const [canScrollPrev, setCanScrollPrev] = useState(false);
+    const [canScrollNext, setCanScrollNext] = useState(false);
+    useEffect(() => {
+        if (emblaApi) {
+            const handleSelect = () => {
+                setCanScrollPrev(emblaApi.canScrollPrev());
+                setCanScrollNext(emblaApi.canScrollNext());
+            };
+
+            emblaApi.on('select', handleSelect);
+            handleSelect();
+        }
+    }, [emblaApi]);
 
     return (
         <section className={styles.embla}>
@@ -88,6 +103,20 @@ const EmblaCarousel = (props) => {
                     ))}
                 </div>
             </div>
+            <button
+                className={`${styles.embla__button} ${styles.embla__button__prev}`}
+                onClick={() => emblaApi && emblaApi.scrollPrev()}
+                disabled={!canScrollPrev}
+            >
+                <ArrowBackOutlinedIcon sx={{fontSize: {xs:"20px", md: "40px"}, color: "#b6b3b1"}}/>
+            </button>
+            <button
+                className={`${styles.embla__button} ${styles.embla__button__next}`}
+                onClick={() => emblaApi && emblaApi.scrollNext()}
+                disabled={!canScrollNext}
+            >
+                <ArrowForwardOutlinedIcon sx={{fontSize: {xs:"20px", md: "40px"}, color: "#b6b3b1"}}/>
+            </button>
         </section>
     );
 };

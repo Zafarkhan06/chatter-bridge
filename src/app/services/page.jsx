@@ -18,7 +18,7 @@ import AnimatedWrapper from '../components/AnimatedFramerMotion/LeftInViewAnimat
 
 function Services() {
     return (
-        <>
+        <div className='overflow-hidden'>
             <Container maxWidth="xl">
                 <div className='flex flex-col py-24 md:flex-row md:py-36 gap-10 justify-between items-center'>
                     <div className='md:w-[55%] flex flex-col gap-5 md:gap-8 justify-between'>
@@ -227,7 +227,7 @@ function Services() {
                     </div>
                 </AnimatedWrapper>
             </div>
-        </>
+        </div>
     )
 }
 

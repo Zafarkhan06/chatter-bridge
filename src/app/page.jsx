@@ -84,7 +84,7 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className="overflow-hidden">
       <EmblaCarousel options={OPTIONS} />
 
 
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
         <div className="mb-20 md:mb-32">
           <AnimatedWrapper from="top" delay={0.5} duration={1}>
-            <h3 className="font-black uppercase tracking-normal text-[#E7E5E4]  leading-none">
+            <h3 className="font-black uppercase tracking-normal text-[#A9A9A9]  leading-none">
               Efficient Taxi Dispatching Services
             </h3>
           </AnimatedWrapper>
@@ -332,6 +332,6 @@ export default function Home() {
           </div>
         </AnimatedWrapper>
       </div>
-    </>
+    </div>
   );
 }

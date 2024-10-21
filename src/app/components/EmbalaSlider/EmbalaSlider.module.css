@@ -141,6 +141,32 @@
     }
   }
   
+  .embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .embla__button__prev {
+    left: 10px; /* Position to the left */
+  }
+  
+  .embla__button__next {
+    right: 10px; /* Position to the right */
+  }
+  
+  .embla__button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
   
   /* .embla__slide__textOverlay h2 {
     margin: 0;

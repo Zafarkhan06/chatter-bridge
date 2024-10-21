@@ -25,7 +25,7 @@ const InfoSection = ({
                         }`}
                 >
                     <AnimatedWrapper from={'top'} delay={0} duration={1}>
-                        <h5 className="leading-none text-[#E7E5E4] tracking-tight">{title}</h5>
+                        <h5 className="leading-none text-[#A9A9A9] tracking-tight">{title}</h5>
                     </AnimatedWrapper>
                     <AnimatedWrapper from={reverseLayout ? 'right' : 'left'} delay={0.3} duration={1}>
                         <h3 className="font-black uppercase leading-none tracking-normal text-[#E7E5E4]">

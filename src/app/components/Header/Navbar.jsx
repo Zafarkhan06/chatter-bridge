@@ -109,7 +109,7 @@ export default function Navbar() {
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar
-           className="flex justify-between md:grid md:grid-cols-4 md:justify-center items-center"
+           className="flex justify-between items-center"
           >
             {/* Logo on the left */}
             <div >
