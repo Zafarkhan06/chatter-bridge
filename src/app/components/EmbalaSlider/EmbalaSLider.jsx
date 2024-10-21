@@ -6,8 +6,8 @@ import { Container } from '@mui/material';
 import Link from 'next/link';
 import styles from './EmbalaSlider.module.css'; // Custom CSS for styling
 import testImage1 from "../../../../public/asset/handpicked-talent.png";
-import testImage3 from "../../../../public/asset/streamline-services.png";
-import testImage2 from "../../../../public/asset/good-1.jpg";
+import testImage3 from "../../../../public/asset/good-1.jpg";
+import testImage2 from "../../../../public/asset/ideal-workspace.jpeg";
 import AnimatedWrapper from '../AnimatedFramerMotion/LeftInViewAnimation';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
