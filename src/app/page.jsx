@@ -88,8 +88,40 @@ export default function Home() {
       <EmblaCarousel options={OPTIONS} />
 
 
-      <div className=" bg-[#444c58] pb-52 md:pb-64 ">
-        <InfoSection {...InforSectionData[0]} />
+      <div className=" bg-[#E7E5E4] pb-52 md:pb-64 ">
+        {/* <InfoSection {...InforSectionData[0]} /> */}
+        <Container maxWidth="xl">
+          <div className=" py-16 md:py-32 rounded-xl  grid grid-cols-1 items-center lg:grid-cols-2 gap-10 md:gap-20">
+            {/* Content section */}
+            <div
+              className={`grid grid-flow-row justify-between gap-5 order-2'}`}
+            >
+              <AnimatedWrapper from={'top'} delay={0} duration={1}>
+                <h5 className="leading-none text-[#444c58] tracking-tight">Connecting Businesses with Custom Talent</h5>
+              </AnimatedWrapper>
+              <AnimatedWrapper from={'left'} delay={0.3} duration={1}>
+                <h3 className="font-black uppercase leading-none tracking-normal text-[#192128]">
+                Connecting You<br/> with the Right Fit
+                </h3>
+              </AnimatedWrapper>
+              <AnimatedWrapper from="left" delay={0.4} duration={1}>
+                <p className="text-[#444c58] font-semibold">With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At TheChatterBridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.</p>
+              </AnimatedWrapper>
+              <AnimatedWrapper from={'bottom'} delay={0} duration={1.2}>
+                <div className="w-fit">
+                  <ReusableButton href={'/services'} text={'Explore Our Services'} />
+                </div>
+              </AnimatedWrapper>
+            </div>
+
+            {/* Image section */}
+            <div className={`flex justify-start order-1`}>
+              <AnimatedWrapper from="left" delay={0} duration={1.1}>
+                <Image src={costEffiecentImage} alt={'costEffiecentImage'} quality={100} className="rounded-xl lg:min-h-[450px] object-cover object-center" />
+              </AnimatedWrapper>
+            </div>
+          </div>
+        </Container>
       </div>
 
       <Container maxWidth="xl" sx={{ position: "relative", }}>
@@ -162,10 +194,10 @@ export default function Home() {
         <Container maxWidth="xl">
           <div className="py-16 md:py-32 ">
             <AnimatedWrapper from="top" delay={0.1} duration={1}>
-              <h3 className="font-black leading-none uppercase text-[#444c58] text-center">Domain <span className="text-[#444c58]">expertise</span></h3>
+              <h3 className="font-black leading-none uppercase text-[#444c58] text-center">Trusted Industry Leaders <span className="text-[#444c58]">expertise</span></h3>
             </AnimatedWrapper>
             <AnimatedWrapper from="bottom" delay={0.2} duration={1}>
-              <h6 className="font-normal leading-none mt-6 text-[#444c58] text-center mb-16">Trusted by 20+ Businesses for Our Customized Solutions</h6>
+              <h6 className="font-normal leading-none mt-6 text-[#444c58] text-center mb-16">Trusted by 20+ Businesses for Our Custom Solutions</h6>
             </AnimatedWrapper>
             <EmblaCarouselSlider />
           </div>
