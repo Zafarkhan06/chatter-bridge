@@ -216,10 +216,10 @@ export default function Home() {
             </AnimatedWrapper>
             <AnimatedWrapper from="bottom" delay={0.3} duration={1}>
               <div className="grid grid-cols-1 md:grid-cols-10 gap-8 md:px-0 lg:px-24 mt-8 md:mt-16 md:!grid-cols-12 md:!px-0 pb-16 md:pb-32">
-                <motion.div whileHover={{ scale: 1.05 }} className="col-span-4  grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} className="col-span-4 group hover:bg-[#444c58]  grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Customer Support</p>
-                    <p className="text-sm text-gray-600">Make Every Customer Feel Valued                  </p>
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Customer Support</p>
+                    <p className="text-sm text-gray-600 group-hover:text-[#E7E5E4]">Make Every Customer Feel Valued                  </p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
@@ -233,10 +233,10 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className=" col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="hover:bg-[#444c58] group col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Telemarketing</p>
-                    <p className="text-sm text-gray-600 capitalize">more outreach, more sales!</p>
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Telemarketing</p>
+                    <p className="text-sm text-gray-600 capitalize group-hover:text-[#E7E5E4]">more outreach, more sales!</p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
@@ -247,11 +247,11 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className=" col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="hover:bg-[#444c58] group col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Chat Support
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Chat Support
                     </p>
-                    <p className="text-sm text-gray-600 capitalize">Rapid response, real connection, instant solutions, happy customers!</p>
+                    <p className="text-sm text-gray-600 capitalize group-hover:text-[#E7E5E4]">Rapid response, real connection, instant solutions, happy customers!</p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
@@ -262,10 +262,10 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="  col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="hover:bg-[#444c58] group col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Virtual Assistant</p>
-                    <p className="text-sm text-gray-600">Limitless Productivity</p>
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Virtual Assistant</p>
+                    <p className="text-sm text-gray-600 group-hover:text-[#E7E5E4]">Limitless Productivity</p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
@@ -280,10 +280,10 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="  col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className=" hover:bg-[#444c58] group col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Answering Services</p>
-                    <p className="text-sm text-gray-600">Never Miss A Call Again</p>
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Answering Services</p>
+                    <p className="text-sm text-gray-600 group-hover:text-[#E7E5E4]">Never Miss A Call Again</p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
@@ -297,10 +297,10 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className="  col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
+                <motion.div whileHover={{ scale: 1.05 }} data-colour="pink" className=" hover:bg-[#444c58] group col-span-4 grid grid-cols-4 gap-8 relative px-8 pt-8 pb-14 rounded-xl border overflow-hidden text-left bg-[#E7E5E4] border-[#444c58] " style={{ boxShadow: "rgba(132, 59, 206, 0.15) 0px 4px 24px" }}>
                   <div className="col-span-3">
-                    <p className="text-h5 font-semibold mb-4 text-[#444c58]">Email Support</p>
-                    <p className="text-sm text-gray-600">Timely Responses, Exceptional Service</p>
+                    <p className="text-h5 font-semibold mb-4 text-[#444c58] group-hover:text-[#E7E5E4]">Email Support</p>
+                    <p className="text-sm text-gray-600 group-hover:text-[#E7E5E4]">Timely Responses, Exceptional Service</p>
                   </div>
                   <div className="absolute flex items-center justify-center -bottom-8 -right-8 w-32 h-32">
                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 z-0" style={{ transform: "rotate(90deg)" }}></svg>
