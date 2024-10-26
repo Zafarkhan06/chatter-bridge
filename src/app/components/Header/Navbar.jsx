@@ -19,7 +19,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
-import chatterlogo from "../../../../public/asset/new-logo.png";
+import chatterlogo from "../../../../public/asset/chatter-new.png";
 import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
@@ -112,9 +112,9 @@ export default function Navbar() {
            className="flex justify-between items-center"
           >
             {/* Logo on the left */}
-            <div >
+            <div className="w-96">
               <Link href="/">
-                <Image src={chatterlogo} alt="Chatter" className="w-4/5 md:w-3/5 cursor-pointer" />
+                <Image src={chatterlogo} alt="Chatter" className="w-4/6 md:w-full cursor-pointer" />
               </Link>
             </div>
 

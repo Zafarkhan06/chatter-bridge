@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import logo from "../../../../public/asset/new-logo.png"
+import logo from "../../../../public/asset/chatter-new.png"
 import Image from 'next/image';
+import Link from 'next/link';
 const Footer = () => {
     return (
         <footer className="   md:px-10 rounded-2xl md:rounded-[60px] my-10 pt-10">
@@ -10,14 +11,14 @@ const Footer = () => {
                     disableGutters={true}
                     maxWidth="xl"
                 >
-                    <div className='bg-[#E7E5E4] pt-10 rounded-xl py-10'>
-                        <a className="flex cursor-pointer items-center justify-center gap-1 font-medium" href="/">
+                    <div className='bg-[#E7E5E4] pt-10 flex flex-col justify-center items-center rounded-xl py-10'>
+                        <Link className="w-full ml-5 md:ml-0 md:w-96 cursor-pointer gap-1 font-medium" href="/">
                             <Image
                                 src={logo}
+                                className="w-3/4 md:w-full cursor-pointer"
                                 alt="muntazim logo"
-                                className=" cursor-pointer"
                             />
-                        </a>
+                        </Link>
                         <div className='flex flex-col justify-center items-center'>
                             <p className="font-medium   md:w-2/3 mb-7 mt-4 text-center  text-[#192128]">
                                 TheChatterBridge offers offshore staffing solutions that seamlessly integrate with your business, enhancing sales, customer support, and operational efficiency to drive real results and lasting growth.
