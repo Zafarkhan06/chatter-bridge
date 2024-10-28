@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import logo from "../../../../public/asset/chatter-new.png"
+import logo from "../../../../public/asset/new-log-new.png"
 import Image from 'next/image';
 import Link from 'next/link';
 const Footer = () => {

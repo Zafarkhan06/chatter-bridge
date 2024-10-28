@@ -19,7 +19,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
-import chatterlogo from "../../../../public/asset/chatter-new.png";
+import chatterlogo from "../../../../public/asset/new-log-new.png";
 import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
