@@ -218,7 +218,7 @@ function Services() {
                 </AnimatedWrapper>
                 <AnimatedWrapper from="left" delay={0.2} duration={1}>
                     <p className="text-[#444c58] mt-6 font-semibold text-center">
-                        Discover how TheChatterBridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
+                        Discover how The Chatter Bridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
                     </p>
                 </AnimatedWrapper>
                 <AnimatedWrapper from="bottom" delay={0.3} duration={1}>

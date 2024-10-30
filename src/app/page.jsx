@@ -32,7 +32,7 @@ export default function Home() {
     {
       "title": "Connecting Businesses with Custom Talent ",
       "subtitle": "Connecting You<br/> with the Right Fit",
-      "description": "With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At TheChatterBridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.",
+      "description": "With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At The Chatter Bridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.",
       "buttonText": "Explore Our Services",
       "buttonHref": "/services",
       "imageSrc": costEffiecentImage,
@@ -105,7 +105,7 @@ export default function Home() {
                 </h3>
               </AnimatedWrapper>
               <AnimatedWrapper from="left" delay={0.4} duration={1}>
-                <p className="text-[#444c58] font-semibold">With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At TheChatterBridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.</p>
+                <p className="text-[#444c58] font-semibold">With over 6 years of experience in sales, marketing, and communication, we’ve mastered the art of building high-performing offshore teams. At The Chatter Bridge, we specialize in matching businesses with talent perfectly aligned to their industry, culture, and goals.</p>
               </AnimatedWrapper>
               <AnimatedWrapper from={'bottom'} delay={0} duration={1.2}>
                 <div className="w-fit">
@@ -355,7 +355,7 @@ export default function Home() {
         </AnimatedWrapper>
         <AnimatedWrapper from="left" delay={0.2} duration={1}>
           <p className="text-[#444c58] mt-6 font-semibold text-center">
-            Discover how TheChatterBridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
+            Discover how The Chatter Bridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
           </p>
         </AnimatedWrapper>
         <AnimatedWrapper from="bottom" delay={0.3} duration={1}>

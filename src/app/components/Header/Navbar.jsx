@@ -19,7 +19,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
-import chatterlogo from "../../../../public/asset/black-logo.png";
+import chatterlogo from "../../../../public/asset/normal-logo.svg";
 import Image from "next/image";
 // const MyCustomButton = dynamic(() => import('../CustomButton/CustomButton'), {
 //   ssr: false, // Disable server-side rendering for this component
@@ -105,7 +105,7 @@ export default function Navbar() {
     <div className="bg-[#E7E5E4]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#66cc8a", backgroundColor: "white", boxShadow: "none", py: 1 }}
+        sx={{ color: "#66cc8a", backgroundColor: "#E7E5E4", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar

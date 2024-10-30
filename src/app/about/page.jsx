@@ -52,7 +52,7 @@ function AboutUS() {
               </AnimatedWrapper>
               <AnimatedWrapper from="bottom" delay={0.2} duration={0.7}>
                 <p className="text-[#444c58] text-xl mt-6 md:mt-10">
-                  At TheChatterBridge, we believe that businesses thrive when
+                  At The Chatter Bridge, we believe that businesses thrive when
                   nurtured with the right talent. Just like a plant, a business
                   grows stronger with the proper care, attention, and the right
                   team. Our tailor-made offshore solutions are designed to
@@ -118,7 +118,7 @@ function AboutUS() {
                       Our Values{" "}
                     </h4>
                     <p className="font-semibold text-lg md:text-2xl text-[#444c58] mt-10 ">
-                      At TheChatterBridge, we believe that the right talent can
+                      At The Chatter Bridge, we believe that the right talent can
                       elevate your business to new heights. Our approach goes beyond
                       the conventional; we focus on understanding your industry,
                       workflow, and culture to find individuals who fit seamlessly
@@ -155,7 +155,7 @@ function AboutUS() {
                     Experience and Expertise{" "}
                   </h5>
                   <p className="font-semibold text-lg md:text-2xl text-[#E7E5E4] mt-10 ">
-                    TheChatterBridge is founded on years of hands-on experience
+                    The Chatter Bridge is founded on years of hands-on experience
                     in sales and marketing. We’ve worked with numerous
                     entrepreneurs to strategize their sales SOPs and optimize
                     their teams’ workflows. Our depth of knowledge allows us to
@@ -187,7 +187,7 @@ function AboutUS() {
                   </h5>
                   <p className="font-semibold text-lg md:text-2xl text-[#444c58] mt-10 pb-3 ">
                     Founded by Furqan and Shehzer, lifelong friends with a
-                    shared dream of helping businesses scale, TheChatterBridge
+                    shared dream of helping businesses scale, The Chatter Bridge
                     is more than a company—it’s a partnership. We aim to work
                     alongside you, delivering tailor-made solutions that
                     generate real value for your business.
@@ -207,7 +207,7 @@ function AboutUS() {
         </AnimatedWrapper>
         <AnimatedWrapper from="left" delay={0.2} duration={1}>
           <p className="text-[#444c58] mt-6 font-semibold text-center">
-            Discover how TheChatterBridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
+            Discover how The Chatter Bridge’s tailored solutions can enhance your business operations with exceptional talent, seamless integration, and unmatched support.
           </p>
         </AnimatedWrapper>
         <AnimatedWrapper from="bottom" delay={0.3} duration={1}>

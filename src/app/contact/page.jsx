@@ -68,10 +68,10 @@ export default function Contact() {
                       Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
                     </p>
                     <div className="flex gap-6 md:flex-row flex-col">
-                      <p className=" text-[#E7E5E4]">
+                      <a href="emailto:Info@thechatterbridge.com" className=" text-[#E7E5E4]">
                         Send us an email to: <br />
-                        <span className="font-bold">hello@firmfox.com</span>
-                      </p>
+                        <span className="font-bold">Info@thechatterbridge.com</span>
+                      </a>
                       <p className=" text-[#E7E5E4]">
                         Alternatively, you can call:<br />
                         <span className="font-bold">+971 55 975 8358</span>
