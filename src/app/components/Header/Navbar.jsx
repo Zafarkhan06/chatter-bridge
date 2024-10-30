@@ -105,7 +105,7 @@ export default function Navbar() {
     <div className="bg-[#E7E5E4]">
       <AppBar
         position={`${isMobile ? "fixed" : "static"}`}
-        sx={{ color: "#66cc8a", backgroundColor: "#E7E5E4", boxShadow: "none", py: 1 }}
+        sx={{ color: "#66cc8a", backgroundColor: "white", boxShadow: "none", py: 1 }}
       >
         <Container maxWidth="xl" disableGutters>
           <Toolbar
