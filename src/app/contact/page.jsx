@@ -1,12 +1,48 @@
+"use client";
+import { useState } from 'react';
 import { Container } from "@mui/material";
 import Image from "next/image";
 import ReusableButton from "../components/ReusableButton/ReusableButton";
 import AnimatedWrapper from "../components/AnimatedFramerMotion/LeftInViewAnimation";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully');
+        setFormData({ fullName: '', email: '', message: '' });
+      } else {
+        alert('Error sending email');
+      }
+    } catch (error) {
+      alert('Error sending email');
+    }
+  };
   return (
     <>
-      {/* Main Heading */}
       <div className=" py-24">
         <Container maxWidth="xl">
           <AnimatedWrapper from="top" delay={0} duration={0.7}>
@@ -22,7 +58,6 @@ export default function Contact() {
         </Container>
       </div>
 
-      {/* For large Screen */}
       <div className=" my-16">
         <Container maxWidth="xl">
           <div className="flex gap-5 md:gap-20 flex-col md:flex-row items-stretch  justify-between ">
@@ -56,118 +91,80 @@ export default function Contact() {
 
               </div>
 
-              {/* Second Card */}
               <AnimatedWrapper from="bottom" delay={0.8} duration={0.7}>
-              <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#444c58]   ">
-                <Container>
-                  <div className="flex flex-col items-start justify-center gap-4">
-                    <h6 className="font-bold text-[#E7E5E4] leading-none">
-                      Contact Us Directly
-                    </h6>
-                    <p className=" text-[#E7E5E4]">
-                      Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
-                    </p>
-                    <div className="flex gap-6 md:flex-row flex-col">
-                      <a href="emailto:Info@thechatterbridge.com" className=" text-[#E7E5E4]">
-                        Send us an email to: <br />
-                        <span className="font-bold">Info@thechatterbridge.com</span>
-                      </a>
-                      {/* <p className=" text-[#E7E5E4]">
-                        Alternatively, you can call:<br />
-                        <span className="font-bold">+971 55 975 8358</span>
-                      </p> */}
+                <div className="rounded-3xl mt-6 mb-10 px-4 py-12 flex-grow bg-[#444c58]   ">
+                  <Container>
+                    <div className="flex flex-col items-start justify-center gap-4">
+                      <h6 className="font-bold text-[#E7E5E4] leading-none">
+                        Contact Us Directly
+                      </h6>
+                      <p className=" text-[#E7E5E4]">
+                        Prefer a direct conversation? We’re just a call away. Our team is ready to assist you with any inquiries. Reach out and let’s get started!
+                      </p>
+                      <div className="flex gap-6 md:flex-row flex-col">
+                        <a href="emailto:Info@thechatterbridge.com" className=" text-[#E7E5E4]">
+                          Send us an email to: <br />
+                          <span className="font-bold">Info@thechatterbridge.com</span>
+                        </a>
+
+                      </div>
                     </div>
-                  </div>
-                </Container>
-              </div>
+                  </Container>
+                </div>
               </AnimatedWrapper>
             </div>
             <div className="md:w-[55%]">
               <AnimatedWrapper from="right" delay={0} duration={0.7}>
-              {/* Form Section  */}
-              <div className="bg-[#E7E5E4] rounded-3xl py-8 px-4 mt-10 ">
-                <Container>
-                  <form action="">
-                    <h5 className="text-[#192128] font-bold pb-6">
-                      Send us a message
-                    </h5>
-                    <div className="">
-                      <label htmlFor="fullName">
-                        <p className="text-[#192128] font-bold pb-2 text-2xl">
-                          Full Name
-                        </p>
-
-                        <input
-                          type="email"
-                          id="fullName"
-                          className="w-full border rounded-lg  text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
-                        />
-                      </label>
-                      <label htmlFor="email">
-                        <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">
-                          Email
-                        </p>
-
-                        <input
-                          type="text"
-                          id="email"
-                          className="w-full border rounded-lg  text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
-                        />
-                      </label>
-                      <label htmlFor="textarea">
-                        <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">
-                          Message
-                        </p>
-
-                        <textarea
-                          id="textarea"
-                          rows="5"
-                          className="w-full border rounded-lg  text-black pl-4  focus:outline-none focus:border-[#afe57f]"
-                        ></textarea>
-                      </label>
-                      <button className="coolBeans w-full border-none my-6">
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-                </Container>
-              </div>
+                <div className="bg-[#E7E5E4] rounded-3xl py-8 px-4 mt-10 ">
+                  <Container>
+                    <form onSubmit={handleSubmit}>
+                      <h5 className="text-[#192128] font-bold pb-6">Send us a message</h5>
+                      <div>
+                        <label htmlFor="fullName">
+                          <p className="text-[#192128] font-bold pb-2 text-2xl">Full Name</p>
+                          <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            value={formData.fullName}
+                            onChange={handleChange}
+                            className="w-full border rounded-lg text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
+                          />
+                        </label>
+                        <label htmlFor="email">
+                          <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">Email</p>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="w-full border rounded-lg text-black pl-4 h-12 focus:outline-none focus:border-[#afe57f]"
+                          />
+                        </label>
+                        <label htmlFor="textarea">
+                          <p className="text-[#192128] font-bold pb-2 pt-6 text-2xl">Message</p>
+                          <textarea
+                            id="textarea"
+                            name="message"
+                            rows="5"
+                            value={formData.message}
+                            onChange={handleChange}
+                            className="w-full border rounded-lg text-black pl-4 focus:outline-none focus:border-[#afe57f]"
+                          ></textarea>
+                        </label>
+                        <button type="submit" className="coolBeans w-full border-none my-6">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </Container>
+                </div>
               </AnimatedWrapper>
             </div>
           </div>
         </Container>
       </div>
-
-
-      {/* Last Card */}
-
-      {/* <div className="rounded-3xl bg-[#edefec] lg:px-10 lg:py-20 lg:mx-32 lg:mt-20 md:mx-20">
-        <Container>
-          <div className="flex flex-col gap-10 p-6 justify-center items-center pt-8 lg:flex-row lg:justify-between ">
-            <Image
-              src={require("../../../public/asset/services-3.jpg")}
-              className="block lg:hidden"
-            />
-            <div className="lg:flex-1 lg:flex lg:flex-col lg:items-start lg:gap-10">
-              <h2 className="font-bold text-[#192128] text-center leading-tight tracking-tighter mt-10 lg:text-start lg:leading-none lg:text-5xl">
-                Launch and Grow Your Business in the UAE
-              </h2>
-              <p className="text-[#172806] text-center lg:text-start">
-                Follow the link below to visit the FirmFox platform, where you
-                can create and manage your business.
-              </p>
-              <div className="flex justify-center items-center">
-                <ReusableButton text={"Get Started Soon"} href={"/"} />
-              </div>
-            </div>
-
-            <Image
-              src={require("../../../public/asset/services-3.jpg")}
-              className="hidden lg:block lg:flex-1"
-            />
-          </div>
-        </Container>
-      </div> */}
     </>
   );
 }

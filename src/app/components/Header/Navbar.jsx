@@ -114,7 +114,7 @@ export default function Navbar() {
             {/* Logo on the left */}
             <div className="w-96">
               <Link href="/">
-                <Image src={chatterlogo} alt="Chatter" className="w-4/6 md:w-full cursor-pointer" />
+                <Image src={chatterlogo} priority alt="Chatter" className="w-4/6 md:w-full cursor-pointer" />
               </Link>
             </div>
 

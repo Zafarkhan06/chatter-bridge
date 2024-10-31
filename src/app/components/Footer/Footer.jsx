@@ -14,6 +14,7 @@ const Footer = () => {
                     <div className='bg-[#E7E5E4] pt-10 flex flex-col justify-center items-center rounded-xl py-10'>
                         <Link className="w-full ml-5 md:ml-0 md:w-96 cursor-pointer gap-1 font-medium" href="/">
                             <Image
+                            priority
                                 src={logo}
                                 className="w-3/4 md:w-full cursor-pointer"
                                 alt="muntazim logo"
