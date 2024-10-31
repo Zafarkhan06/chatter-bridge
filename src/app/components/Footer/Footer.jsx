@@ -23,7 +23,9 @@ const Footer = () => {
                             <p className="font-medium   md:w-2/3 mb-7 mt-4 text-center  text-[#192128]">
                                 The Chatter Bridge offers offshore staffing solutions that seamlessly integrate with your business, enhancing sales, customer support, and operational efficiency to drive real results and lasting growth.
                             </p>
+                            <Link href="/contact">
                             <button className="bg-[#444c58] hover:bg-[#192128] text-[#E7E5E4] py-3 rounded-lg text-xl font-semibold w-44">Contact US</button>
+                            </Link>
                         </div>
 
                     </div>
@@ -85,7 +87,7 @@ const Footer = () => {
                                                 <a className="underline-text" href="mailto:Info@thechatterbridge.com">
                                                     Email: Info@thechatterbridge.com</a>
                                             </div>
-                                            <div className="relative inline-block">
+                                            {/* <div className="relative inline-block">
                                                 <a className="underline-text">
                                                     Rushden office
                                                     : 119 High Street Rushden</a>
@@ -93,7 +95,7 @@ const Footer = () => {
                                             <div className="relative inline-block">
                                                 <a className="underline-text">
                                                     Wellingborough office: 1A Alma Street Wellingborough</a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
 

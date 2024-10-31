@@ -72,10 +72,10 @@ export default function Contact() {
                         Send us an email to: <br />
                         <span className="font-bold">Info@thechatterbridge.com</span>
                       </a>
-                      <p className=" text-[#E7E5E4]">
+                      {/* <p className=" text-[#E7E5E4]">
                         Alternatively, you can call:<br />
                         <span className="font-bold">+971 55 975 8358</span>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </Container>
