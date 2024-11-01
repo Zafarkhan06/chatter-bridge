@@ -95,9 +95,9 @@ export default function Navbar() {
       </List>
 
       {/* Contact Us button at the bottom */}
-      <div className="flex justify-center items-center py-2 mt-3">
+      {/* <div className="flex justify-center items-center py-2 mt-3">
       <button className="bg-[#444c58] hover:bg-[#192128] text-[#E7E5E4] py-3 rounded-lg text-xl font-semibold w-44">Contact US</button>
-      </div>
+      </div> */}
     </Box>
   );
 
